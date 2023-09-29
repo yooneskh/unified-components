@@ -17,8 +17,8 @@ export default defineConfig({
   shortcuts: [
     {
       'btn': `
-        px-2 py-1 rounded
-        flex gap-1 items-center
+        px-0.85em py-0.5em rounded-md
+        flex gap-1.5 items-center shrink-0
         relative overflow-hidden
         interactive
         color-dark
