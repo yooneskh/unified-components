@@ -4,137 +4,214 @@
 
 
 <template>
-  <div>
+  <div class="pa-4">
 
-    <div class="pa-3">
+    <div class="text-xl font-bold">
+      Fill
+    </div>
 
-      <div class="text-xl font-bold">
-        Fill
-      </div>
+    <div class="flex gap-2 mt-3">
 
-      <div class="flex gap-2 mt-3">
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill color-dark"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill color-blue"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill color-blue"
-        />
-  
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill color-orange"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill color-teal"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill color-green-500"
-        />
-
-      </div>
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill color-green"
+      />
 
     </div>
 
-    <div class="pa-3">
 
-      <div class="text-xl font-bold">
-        Outline
-      </div>
+    <div class="text-xl font-bold mt-4">
+      Outline
+    </div>
 
-      <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-3">
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="outline"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="outline color-dark"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="outline color-blue"
-        />
-  
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="outline color-orange"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="outline color-blue"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="outline color-green-500"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="outline color-teal"
+      />
 
-      </div>
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="outline color-green"
+      />
 
     </div>
 
-    <div class="pa-3">
 
-      <div class="text-xl font-bold">
-        Sizes
-      </div>
+    <div class="text-xl font-bold mt-4">
+      Soft
+    </div>
 
-      <div class="flex items-start gap-2 mt-3">
+    <div class="flex gap-2 mt-3">
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-xs"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="soft color-dark"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-sm"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="soft color-blue"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="soft color-teal"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-lg"
-        />
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="soft color-green"
+      />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-xl"
-        />
+    </div>
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-2xl"
-        />
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-3xl"
-        />
+    <div class="text-xl font-bold mt-4">
+      Ghost
+    </div>
 
-        <u-btn
-          icon="i-heroicons-user"
-          label="Welcome Here"
-          class="fill text-4xl"
-        />
+    <div class="flex gap-2 mt-3">
 
-      </div>
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="ghost color-dark"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="ghost color-blue"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="ghost color-teal"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="ghost color-green"
+      />
+
+    </div>
+
+
+    <div class="text-xl font-bold mt-4">
+      Link
+    </div>
+
+    <div class="flex gap-2 mt-3">
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="link color-dark"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="link color-blue"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="link color-teal"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="link color-green"
+      />
+
+    </div>
+
+
+    <div class="text-xl font-bold mt-4">
+      Sizes
+    </div>
+
+    <div class="flex items-start gap-2 mt-3">
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill text-xs"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill text-sm"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill text-lg"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill text-xl"
+      />
+
+      <u-btn
+        icon="i-heroicons-user"
+        label="Welcome Here"
+        class="fill text-2xl"
+      />
 
     </div>
 
