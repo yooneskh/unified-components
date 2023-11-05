@@ -1,10 +1,12 @@
-import { defineConfig, presetWind, presetIcons } from 'unocss'
+import { defineConfig, presetWind, presetIcons } from 'unocss';
 
 
 export default defineConfig({
   presets: [
     presetWind(),
-    presetIcons(),
+    presetIcons({
+      scale: 1.1,
+    }),
   ],
   rules: [
     [
@@ -24,9 +26,7 @@ export default defineConfig({
         color-dark
       `,
       'interactive': `
-        after:absolute after:inset-0 after:content-[""] after:bg-[var(--u-color)] after:opacity-0
-        after:transition after:duration-150
-        hover:after:opacity-20 active:after:opacity-30
+        transition-transform hover:scale-98 active:scale-95
       `,
       'outline': `
         bg-transparent
@@ -38,5 +38,5 @@ export default defineConfig({
         text-white
       `,
     },
-  ]
+  ],
 });
