@@ -36,8 +36,12 @@ export default defineConfig({
       'btn': `
         px-0.85em py-0.5em rounded-md
         flex gap-1.5 items-center shrink-0
+        self-start
         relative overflow-hidden
         interactive
+      `,
+      'btn-icon-only': `
+        px-0.5em
       `,
       'interactive': `
         transition-transform hover:scale-98 active:scale-95
@@ -67,6 +71,10 @@ export default defineConfig({
         bg-transparent
         text-[var(--u-color)]
         hover:underline
+      `,
+      'text': `
+        bg-transparent
+        text-[var(--u-color)]
       `,
     },
   ],

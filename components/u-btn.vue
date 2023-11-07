@@ -22,7 +22,11 @@ const emit = defineEmits([
 
 
 <template>
-  <button class="btn">
+  <button
+    class="btn"
+    :class="{
+      'btn-icon-only': props.icon && !props.label && !$slots.default,
+    }">
     
     <i
       v-if="props.icon"
