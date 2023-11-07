@@ -7,210 +7,169 @@
   <div class="pa-4">
 
     <div class="text-xl font-bold">
-      Fill
+      Variants
     </div>
 
     <div class="flex gap-2 mt-3">
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
+        label="Fill"
         class="fill color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill color-blue"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill color-teal"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill color-green"
-      />
-
-    </div>
-
-
-    <div class="text-xl font-bold mt-4">
-      Outline
-    </div>
-
-    <div class="flex gap-2 mt-3">
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
+        label="Outline"
         class="outline color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="outline color-blue"
+        label="Soft"
+        class="soft color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="outline color-teal"
+        label="Ghost"
+        class="ghost color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="outline color-green"
+        label="Link"
+        class="link color-dark"
+      />
+
+      <u-btn
+        label="Text"
+        class="text color-dark"
       />
 
     </div>
 
-
     <div class="text-xl font-bold mt-4">
-      Soft
+      Icons
     </div>
 
     <div class="flex gap-2 mt-3">
 
       <u-btn
+        label="Button"
         icon="i-heroicons-user"
-        label="Welcome Here"
+        class="fill color-dark"
+      />
+
+      <u-btn
+        label="Button"
+        append-icon="i-heroicons-user"
+        class="outline color-dark"
+      />
+
+      <u-btn
+        label="Button"
+        icon="i-heroicons-user"
+        append-icon="i-heroicons-plus"
         class="soft color-dark"
       />
 
       <u-btn
         icon="i-heroicons-user"
-        label="Welcome Here"
-        class="soft color-blue"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="soft color-teal"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="soft color-green"
-      />
-
-    </div>
-
-
-    <div class="text-xl font-bold mt-4">
-      Ghost
-    </div>
-
-    <div class="flex gap-2 mt-3">
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
         class="ghost color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="ghost color-blue"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="ghost color-teal"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="ghost color-green"
-      />
-
-    </div>
-
-
-    <div class="text-xl font-bold mt-4">
-      Link
-    </div>
-
-    <div class="flex gap-2 mt-3">
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
+        icon="i-heroicons-plus"
         class="link color-dark"
       />
 
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="link color-blue"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="link color-teal"
-      />
-
-      <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="link color-green"
-      />
-
     </div>
-
 
     <div class="text-xl font-bold mt-4">
       Sizes
     </div>
 
-    <div class="flex items-start gap-2 mt-3">
+    <div class="flex gap-2 mt-3 items-start">
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill text-xs"
+        label="Button"
+        class="fill color-dark text-sm"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill text-sm"
+        label="Button"
+        class="outline color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill"
+        label="Button"
+        class="soft color-dark text-2xl"
+      />
+
+    </div>
+
+    <div class="text-xl font-bold mt-4">
+      Roundness
+    </div>
+
+    <div class="flex gap-2 mt-3 items-start">
+
+      <u-btn
+        label="Button"
+        class="fill color-dark rounded-none"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill text-lg"
+        label="Button"
+        class="fill color-dark rounded"
       />
 
       <u-btn
-        icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill text-xl"
+        label="Button"
+        class="fill color-dark rounded-xl"
       />
 
       <u-btn
+        label="Button"
+        class="fill color-dark rounded-full"
+      />
+
+    </div>
+
+    <div class="text-xl font-bold mt-4">
+      Loading
+    </div>
+
+    <div class="flex gap-2 mt-3 items-start">
+
+      <u-btn
+        label="Button"
+        class="fill color-dark"
+      />
+
+      <u-btn
+        label="Button"
         icon="i-heroicons-user"
-        label="Welcome Here"
-        class="fill text-2xl"
+        class="fill color-dark"
+      />
+      
+      <u-btn
+        icon="i-heroicons-user"
+        class="fill color-dark"
+      />
+
+      <u-btn
+        label="Button"
+        icon="i-heroicons-user"
+        class="outline color-dark"
+      />
+
+      <u-btn
+        label="Button"
+        icon="i-heroicons-user"
+        class="ghost color-dark"
+      />
+
+      <u-btn
+        label="Button"
+        icon="i-heroicons-user"
+        class="text color-dark"
       />
 
     </div>
