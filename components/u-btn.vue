@@ -35,7 +35,7 @@ const emit = defineEmits([
       'btn-icon-only': props.icon && !props.label && !$slots.default,
       'btn-loading': props.loading,
     }">
-    
+
     <span
       v-if="props.loading"
       class="btn-loader absolute flex items-center justify-center inset-0 bg-white/50">
@@ -48,12 +48,12 @@ const emit = defineEmits([
       v-if="props.icon"
       :class="props.icon"
     />
-    
+
     <span>
       {{ props.label }}
       <slot />
     </span>
-    
+
     <i
       v-if="props.appendIcon"
       :class="props.appendIcon"

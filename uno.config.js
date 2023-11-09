@@ -1,21 +1,6 @@
 import { defineConfig, presetWind, presetIcons } from 'unocss';
 
 
-// const colors = [
-//   'red',
-//   'green',
-//   'blue',
-//   'teal',
-//   'black',
-//   'white',
-//   'dark',
-//   'light',
-//   'primary',
-//   'secondary',
-//   'success',
-//   'error',
-// ];
-
 export default defineConfig({
   presets: [
     presetWind(),
@@ -35,7 +20,7 @@ export default defineConfig({
     {
       'btn': `
         px-0.85em py-0.5em rounded-md
-        flex gap-1.5 items-center shrink-0
+        inline-flex gap-1.5 items-center shrink-0
         self-start
         relative overflow-hidden
         interactive
@@ -78,7 +63,4 @@ export default defineConfig({
       `,
     },
   ],
-  // safelist: [
-  //   ...colors.map(it => `color-${it}`),
-  // ]
 });
