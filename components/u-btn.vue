@@ -3,15 +3,22 @@
 /* interface */
 
 const props = defineProps({
+
   label: {
     type: String,
   },
+
   icon: {
     type: String,
   },
   appendIcon: {
     type: String,
   },
+
+  loading: {
+    type: Boolean,
+  },
+
 });
 
 const emit = defineEmits([
@@ -26,15 +33,26 @@ const emit = defineEmits([
     class="btn"
     :class="{
       'btn-icon-only': props.icon && !props.label && !$slots.default,
+      'btn-loading': props.loading,
     }">
     
+    <span
+      v-if="props.loading"
+      class="btn-loader absolute flex items-center justify-center inset-0 bg-white/50">
+      <u-spinner
+        class="h-1em"
+      />
+    </span>
+
     <i
       v-if="props.icon"
       :class="props.icon"
     />
     
-    {{ props.label }}
-    <slot />
+    <span>
+      {{ props.label }}
+      <slot />
+    </span>
     
     <i
       v-if="props.appendIcon"
@@ -43,3 +61,12 @@ const emit = defineEmits([
 
   </button>  
 </template>
+
+
+<style scoped>
+
+  .btn-loading > *:not(.btn-loader) {
+    opacity: 0;
+  }
+
+</style>

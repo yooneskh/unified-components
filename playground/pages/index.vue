@@ -141,35 +141,41 @@
       <u-btn
         label="Button"
         class="fill color-dark"
+        loading
       />
 
       <u-btn
         label="Button"
         icon="i-heroicons-user"
-        class="fill color-dark"
+        class="fill color-success"
+        loading
       />
       
       <u-btn
         icon="i-heroicons-user"
-        class="fill color-dark"
+        class="fill color-blue"
+        loading
       />
 
       <u-btn
         label="Button"
         icon="i-heroicons-user"
         class="outline color-dark"
+        loading
       />
 
       <u-btn
         label="Button"
         icon="i-heroicons-user"
-        class="ghost color-dark"
+        class="ghost color-red"
+        loading
       />
 
       <u-btn
         label="Button"
         icon="i-heroicons-user"
         class="text color-dark"
+        loading
       />
 
     </div>
