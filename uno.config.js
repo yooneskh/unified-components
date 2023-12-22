@@ -29,7 +29,7 @@ export default defineConfig({
         px-0.5em
       `,
       'interactive': `
-        transition-transform hover:scale-98 active:scale-95
+        transition-transform active:scale-95
       `,
       'fill': `
         bg-[var(--u-color)]

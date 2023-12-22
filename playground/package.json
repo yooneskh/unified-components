@@ -1,7 +1,7 @@
 {
   "name": "unified-components-playground",
   "devDependencies": {
-    "nuxt": "3.8.1"
+    "nuxt": "3.8.2"
   },
   "private": true,
   "scripts": {
