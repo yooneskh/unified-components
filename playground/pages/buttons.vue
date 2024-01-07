@@ -52,30 +52,30 @@
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="fill color-dark"
       />
 
       <u-btn
         label="Button"
-        append-icon="i-heroicons-user"
+        append-icon="i-mdi-account"
         class="outline color-dark"
       />
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
-        append-icon="i-heroicons-plus"
+        icon="i-mdi-account"
+        append-icon="i-mdi-plus"
         class="soft color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="ghost color-dark"
       />
 
       <u-btn
-        icon="i-heroicons-plus"
+        icon="i-mdi-plus"
         class="link color-dark"
       />
 
@@ -146,34 +146,34 @@
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="fill color-success"
         loading
       />
       
       <u-btn
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="fill color-blue"
         loading
       />
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="outline color-dark"
         loading
       />
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="ghost color-red"
         loading
       />
 
       <u-btn
         label="Button"
-        icon="i-heroicons-user"
+        icon="i-mdi-account"
         class="text color-dark"
         loading
       />
