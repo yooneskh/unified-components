@@ -11,12 +11,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.9.0"
+    "nuxt": "3.9.1"
   },
   "dependencies": {
     "@iconify-json/heroicons": "1.1.19",
-    "@unocss/nuxt": "0.58.2",
-    "@unocss/reset": "0.58.2"
+    "@unocss/nuxt": "0.58.3",
+    "@unocss/reset": "0.58.3"
   },
   "files": [
     "./components/**/*",
