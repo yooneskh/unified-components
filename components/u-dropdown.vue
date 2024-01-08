@@ -4,10 +4,6 @@
 
 const props = defineProps({
 
-  text: {
-    type: String,
-    default: undefined,
-  },
   class: {
     type: String,
     default: undefined,
@@ -20,7 +16,7 @@ const props = defineProps({
 
   placement: {
     type: String,
-    default: 'top',
+    default: undefined,
   },
   strategy: {
     type: String,
@@ -29,7 +25,7 @@ const props = defineProps({
 
   trigger: {
     type: String,
-    default: 'hover',
+    default: 'click',
   },
   persist: {
     type: [Boolean, String],
@@ -65,16 +61,13 @@ const modelValue = defineModel({
 
 import { reactiveOmit } from '@vueuse/core';
 
-const floaterProp = reactiveOmit(props, [ 'text', 'class' ]);
+const floaterProp = reactiveOmit(props, [ 'class' ]);
 
 </script>
 
 
 <template>
   <u-floater v-bind="floaterProp" v-model="modelValue">
-    <div class="bg-dark text-light px-2 py-1 rounded-lg" :class="props.class">
-      {{ props.text }}
-      <slot />
-    </div>
+    <slot />
   </u-floater>
 </template>

@@ -49,7 +49,7 @@ const emit = defineEmits([
       :class="props.icon"
     />
 
-    <span v-if="props.label || $slots.default">
+    <span v-if="props.label || $slots.default" data-no-reference>
       {{ props.label }}
       <slot />
     </span>
