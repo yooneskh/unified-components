@@ -21,7 +21,6 @@ export default defineConfig({
       'btn': `
         px-0.85em py-0.5em rounded-md
         inline-flex gap-1.5 items-center shrink-0
-        self-start
         relative overflow-hidden
         interactive
       `,
@@ -32,34 +31,40 @@ export default defineConfig({
         transition-transform active:scale-95
       `,
       'fill': `
-        bg-[var(--u-color)]
+        bg-[--u-color]
         text-white
+        border-2px border-[--u-color]
       `,
       'outline': `
         bg-transparent
-        border-2px border-[var(--u-color)]
-        text-[var(--u-color)]
+        border-2px border-[--u-color]
+        text-[--u-color]
       `,
       'soft': `
         bg-transparent
-        text-[var(--u-color)]
-        before:absolute before:inset-0 before:content-[""] before:bg-[var(--u-color)] before:opacity-15
+        text-[--u-color]
+        before:absolute before:inset-0 before:content-[""] before:bg-[--u-color] before:opacity-15
+        border-2px border-[color-mix(in_srgb,var(--u-color)_15%,transparent)]
       `,
       'ghost': `
         bg-transparent
-        text-[var(--u-color)]
-        before:absolute before:inset-0 before:content-[""] before:bg-[var(--u-color)] before:opacity-0
+        text-[--u-color]
+        transition
+        before:absolute before:inset-0 before:content-[""] before:bg-[--u-color] before:opacity-0
         before:transition before:duration-150
         hover:before:opacity-20 active:before:opacity-30
+        border-2px border-transparent hover:border-[color-mix(in_srgb,var(--u-color)_20%,transparent)] active:border-[color-mix(in_srgb,var(--u-color)_30%,transparent)]
       `,
       'link': `
         bg-transparent
-        text-[var(--u-color)]
+        text-[--u-color]
         hover:underline
+        border-2px border-transparent
       `,
       'text': `
         bg-transparent
-        text-[var(--u-color)]
+        text-[--u-color]
+        border-2px border-transparent
       `,
     },
   ],

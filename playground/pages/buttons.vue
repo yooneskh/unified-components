@@ -10,7 +10,7 @@
       Variants
     </div>
 
-    <div class="flex gap-2 mt-3">
+    <div class="space-x-2 mt-3">
 
       <u-btn
         label="Fill"
@@ -48,7 +48,7 @@
       Icons
     </div>
 
-    <div class="flex gap-2 mt-3">
+    <div class="space-x-2 mt-3">
 
       <u-btn
         label="Button"
