@@ -19,13 +19,18 @@ export default defineConfig({
   shortcuts: [
     {
       'btn': `
-        px-0.85em py-0.5em rounded-md
+        px-[0.85em] py-[0.5em] rounded-md
         inline-flex gap-1.5 items-center shrink-0
         relative overflow-hidden
         interactive
       `,
       'btn-icon-only': `
         px-0.5em
+      `,
+      'chip': `
+        px-[0.85em] py-[-0.5em] rounded-full
+        inline-flex gap-1.5 items-center shrink-0
+        relative overflow-hidden
       `,
       'interactive': `
         transition-transform active:scale-95
