@@ -11,13 +11,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.9.3"
+    "nuxt": "3.10.1"
   },
   "dependencies": {
-    "@floating-ui/vue": "1.0.5",
+    "@floating-ui/vue": "1.0.6",
     "@iconify-json/mdi": "1.1.64",
-    "@unocss/nuxt": "0.58.4",
-    "@unocss/reset": "0.58.4",
+    "@unocss/nuxt": "0.58.5",
+    "@unocss/reset": "0.58.5",
     "@vueuse/core": "10.7.2"
   },
   "files": [
