@@ -100,7 +100,7 @@
         Markup
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
-            This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account inline-block -mb-1" />
+            This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account" />
           </div>
         </u-dropdown>
       </u-btn>

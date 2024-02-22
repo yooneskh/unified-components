@@ -90,7 +90,7 @@
       <u-btn>
         Markup
         <u-tooltip>
-          This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account inline-block -mb-1" />
+          This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account" />
         </u-tooltip>
       </u-btn>
 

@@ -14,32 +14,70 @@
 
       <u-btn
         label="Fill"
-        class="fill color-dark"
+        class="fill u-color-neutral"
       />
 
       <u-btn
         label="Outline"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-btn
         label="Soft"
-        class="soft color-dark"
+        class="soft u-color-neutral"
       />
 
       <u-btn
         label="Ghost"
-        class="ghost color-dark"
+        class="ghost u-color-neutral"
       />
 
       <u-btn
         label="Link"
-        class="link color-dark"
+        class="link u-color-neutral"
       />
 
       <u-btn
         label="Text"
-        class="text color-dark"
+        class="text u-color-neutral"
+      />
+
+    </div>
+
+    <div class="text-xl font-bold mt-4">
+      Colors
+    </div>
+
+    <div class="space-x-2 mt-3">
+
+      <u-btn
+        label="Neutral"
+        class="fill u-color-neutral"
+      />
+
+      <u-btn
+        label="Primary"
+        class="fill u-color-primary"
+      />
+
+      <u-btn
+        label="Secondary"
+        class="outline u-color-secondary"
+      />
+
+      <u-btn
+        label="Success"
+        class="soft u-color-success"
+      />
+
+      <u-btn
+        label="Error"
+        class="ghost u-color-error"
+      />
+
+      <u-btn
+        label="Error"
+        class="link u-color-error"
       />
 
     </div>
@@ -53,30 +91,30 @@
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill color-dark"
+        class="fill u-color-neutral"
       />
 
       <u-btn
         label="Button"
         append-icon="i-mdi-account"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
         append-icon="i-mdi-plus"
-        class="soft color-dark"
+        class="soft u-color-neutral"
       />
 
       <u-btn
         icon="i-mdi-account"
-        class="ghost color-dark"
+        class="ghost u-color-neutral"
       />
 
       <u-btn
         icon="i-mdi-plus"
-        class="link color-dark"
+        class="link u-color-neutral"
       />
 
     </div>
@@ -89,17 +127,17 @@
 
       <u-btn
         label="Button"
-        class="fill color-dark text-sm"
+        class="fill u-color-neutral text-sm"
       />
 
       <u-btn
         label="Button"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-btn
         label="Button"
-        class="soft color-dark text-2xl"
+        class="soft u-color-neutral text-2xl"
       />
 
     </div>
@@ -112,22 +150,22 @@
 
       <u-btn
         label="Button"
-        class="fill color-dark rounded-none"
+        class="fill u-color-neutral rounded-none"
       />
 
       <u-btn
         label="Button"
-        class="fill color-dark rounded"
+        class="fill u-color-neutral rounded"
       />
 
       <u-btn
         label="Button"
-        class="fill color-dark rounded-xl"
+        class="fill u-color-neutral rounded-xl"
       />
 
       <u-btn
         label="Button"
-        class="fill color-dark rounded-full"
+        class="fill u-color-neutral rounded-full"
       />
 
     </div>
@@ -140,41 +178,41 @@
 
       <u-btn
         label="Button"
-        class="fill color-dark"
+        class="fill u-color-neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill color-success"
+        class="fill u-color-neutral"
         loading
       />
       
       <u-btn
         icon="i-mdi-account"
-        class="fill color-blue"
+        class="fill u-color-neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="outline color-dark"
+        class="outline u-color-neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="ghost color-red"
+        class="ghost u-color-neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="text color-dark"
+        class="text u-color-neutral"
         loading
       />
 

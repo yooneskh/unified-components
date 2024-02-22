@@ -14,32 +14,32 @@
 
       <u-chip
         label="Fill"
-        class="fill color-dark"
+        class="fill u-color-neutral"
       />
 
       <u-chip
         label="Outline"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-chip
         label="Soft"
-        class="soft color-dark"
+        class="soft u-color-neutral"
       />
 
       <u-chip
         label="Ghost"
-        class="ghost color-dark"
+        class="ghost u-color-neutral"
       />
 
       <u-chip
         label="Link"
-        class="link color-dark"
+        class="link u-color-neutral"
       />
 
       <u-chip
         label="Text"
-        class="text color-dark"
+        class="text u-color-neutral"
       />
 
     </div>
@@ -52,32 +52,32 @@
 
       <u-chip
         label="Fill"
-        class="fill color-primary"
+        class="fill u-color-primary"
       />
 
       <u-chip
         label="Outline"
-        class="outline color-secondary"
+        class="outline u-color-secondary"
       />
 
       <u-chip
         label="Soft"
-        class="soft color-success"
+        class="soft u-color-success"
       />
 
       <u-chip
         label="Ghost"
-        class="ghost color-error"
+        class="ghost u-color-error"
       />
 
       <u-chip
         label="Link"
-        class="link color-success"
+        class="link u-color-success"
       />
 
       <u-chip
         label="Text"
-        class="text color-teal"
+        class="text u-color-teal"
       />
 
     </div>
@@ -91,20 +91,20 @@
       <u-chip
         label="Chip"
         icon="i-mdi-account"
-        class="fill color-dark"
+        class="fill u-color-neutral"
       />
 
       <u-chip
         label="Chip"
         append-icon="i-mdi-account"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-chip
         label="Chip"
         icon="i-mdi-account"
         append-icon="i-mdi-plus"
-        class="soft color-dark"
+        class="soft u-color-neutral"
       />
 
     </div>
@@ -117,17 +117,17 @@
 
       <u-chip
         label="Chip"
-        class="fill color-dark text-sm"
+        class="fill u-color-neutral text-sm"
       />
 
       <u-chip
         label="Chip"
-        class="outline color-dark"
+        class="outline u-color-neutral"
       />
 
       <u-chip
         label="Chip"
-        class="soft color-dark text-2xl"
+        class="soft u-color-neutral text-2xl"
       />
 
     </div>
@@ -140,22 +140,22 @@
 
       <u-chip
         label="Chip"
-        class="fill color-dark rounded-none"
+        class="fill u-color-neutral rounded-none"
       />
 
       <u-chip
         label="Chip"
-        class="fill color-dark rounded"
+        class="fill u-color-neutral rounded"
       />
 
       <u-chip
         label="Chip"
-        class="fill color-dark rounded-xl"
+        class="fill u-color-neutral rounded-xl"
       />
 
       <u-chip
         label="Chip"
-        class="fill color-dark rounded-full"
+        class="fill u-color-neutral rounded-full"
       />
 
     </div>
