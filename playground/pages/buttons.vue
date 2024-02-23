@@ -14,32 +14,38 @@
 
       <u-btn
         label="Fill"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
       />
 
       <u-btn
         label="Outline"
-        class="outline u-color-neutral"
+        variant="outline"
+        color="neutral"
       />
 
       <u-btn
         label="Soft"
-        class="soft u-color-neutral"
+        variant="soft"
+        color="neutral"
       />
 
       <u-btn
         label="Ghost"
-        class="ghost u-color-neutral"
+        variant="ghost"
+        color="neutral"
       />
 
       <u-btn
         label="Link"
-        class="link u-color-neutral"
+        variant="link"
+        color="neutral"
       />
 
       <u-btn
         label="Text"
-        class="text u-color-neutral"
+        variant="text"
+        color="neutral"
       />
 
     </div>
@@ -52,32 +58,38 @@
 
       <u-btn
         label="Neutral"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
       />
 
       <u-btn
         label="Primary"
-        class="fill u-color-primary"
+        variant="fill"
+        color="primary"
       />
 
       <u-btn
         label="Secondary"
-        class="outline u-color-secondary"
+        variant="outline"
+        color="secondary"
       />
 
       <u-btn
         label="Success"
-        class="soft u-color-success"
+        variant="soft"
+        color="success"
       />
 
       <u-btn
         label="Error"
-        class="ghost u-color-error"
+        variant="ghost"
+        color="error"
       />
 
       <u-btn
         label="Error"
-        class="link u-color-error"
+        variant="link"
+        color="error"
       />
 
     </div>
@@ -91,30 +103,35 @@
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
       />
 
       <u-btn
         label="Button"
         append-icon="i-mdi-account"
-        class="outline u-color-neutral"
+        variant="outline"
+        color="neutral"
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
         append-icon="i-mdi-plus"
-        class="soft u-color-neutral"
+        variant="soft"
+        color="neutral"
       />
 
       <u-btn
         icon="i-mdi-account"
-        class="ghost u-color-neutral"
+        variant="ghost"
+        color="neutral"
       />
 
       <u-btn
         icon="i-mdi-plus"
-        class="link u-color-neutral"
+        variant="link"
+        color="neutral"
       />
 
     </div>
@@ -127,17 +144,22 @@
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral text-sm"
+        variant="fill text-sm"
+        color="neutral"
+        class="text-sm"
       />
 
       <u-btn
         label="Button"
-        class="outline u-color-neutral"
+        color="neutral"
+        variant="outline"
       />
 
       <u-btn
         label="Button"
-        class="soft u-color-neutral text-2xl"
+        variant="soft"
+        color="neutral"
+        class="text-2xl"
       />
 
     </div>
@@ -150,22 +172,30 @@
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral rounded-none"
+        variant="fill"
+        color="neutral"
+        class="rounded-none"
       />
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral rounded"
+        variant="fill"
+        color="neutral"
+        class="rounded"
       />
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral rounded-xl"
+        variant="fill"
+        color="neutral"
+        class="rounded-xl"
       />
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral rounded-full"
+        variant="fill"
+        color="neutral"
+        class="rounded-full"
       />
 
     </div>
@@ -178,41 +208,47 @@
 
       <u-btn
         label="Button"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
         loading
       />
       
       <u-btn
         icon="i-mdi-account"
-        class="fill u-color-neutral"
+        variant="fill"
+        color="neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="outline u-color-neutral"
+        variant="outline"
+        color="neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="ghost u-color-neutral"
+        variant="ghost"
+        color="neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="text u-color-neutral"
+        variant="text"
+        color="neutral"
         loading
       />
 

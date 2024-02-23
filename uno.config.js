@@ -18,8 +18,8 @@ export default defineConfig({
       ([ _, color ], { theme }) => {
         if (theme.colors[color]) {
           return {
-            '--u-color': theme?.colors?.[color] ?? 'xxx',
-            '--u-on-color': theme?.colors?.['on-' + color] ?? 'xxx',
+            '--u-color': theme?.colors?.[color],
+            '--u-on-color': theme?.colors?.['on-' + color],
           };
         }
       },
@@ -79,5 +79,10 @@ export default defineConfig({
         border-[2px] border-transparent
       `,
     },
+  ],
+  safelist: [
+    ...['neutral', 'primary', 'secondary', 'accent', 'info', 'success', 'error'].map(it => `u-color-${it}`), // colors
+    ...['fill', 'outline', 'soft', 'ghost', 'link', 'text'], // variants
+    ...['interactive'], // others
   ],
 });

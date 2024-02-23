@@ -1,13 +1,13 @@
 {
   "name": "unified-components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "main": "./nuxt.config.js",
   "scripts": {
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.10.2",
+    "nuxt": "3.10.3",
     "@iconify-json/mdi": "1.1.64",
     "@unocss/nuxt": "0.58.5"
   },

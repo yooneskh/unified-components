@@ -7,12 +7,20 @@ const props = defineProps({
   label: {
     type: String,
   },
-
   icon: {
     type: String,
   },
   appendIcon: {
     type: String,
+  },
+
+  variant: {
+    type: String,
+    default: 'fill',
+  },
+  color: {
+    type: String,
+    default: 'neutral',
   },
 
   loading: {
@@ -31,10 +39,14 @@ const emit = defineEmits([
 <template>
   <button
     class="btn"
-    :class="{
-      'btn-icon-only': props.icon && !props.label && !$slots.default,
-      'btn-loading': props.loading,
-    }">
+    :class="[
+      `u-color-${props.color}`,
+      props.variant,
+      {
+        'btn-icon-only': props.icon && !props.label && !$slots.default,
+        'btn-loading': props.loading,
+      }
+    ]">
 
     <span
       v-if="props.loading"
