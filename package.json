@@ -7,14 +7,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.10.3",
-    "@iconify-json/mdi": "1.1.64",
-    "@unocss/nuxt": "0.58.5"
+    "nuxt": "3.10.3"
   },
   "dependencies": {
     "@floating-ui/vue": "1.0.6",
+    "@iconify-json/mdi": "1.1.64",
+    "@unocss/nuxt": "0.58.5",
     "@unocss/reset": "0.58.5",
-    "@vueuse/core": "10.8.0"
+    "@vueuse/core": "10.9.0"
   },
   "files": [
     "./components/**/*",
