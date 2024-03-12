@@ -33,6 +33,50 @@ const emit = defineEmits([
 
 ]);
 
+
+/* content */
+
+import { Text, Fragment, Comment } from 'vue';
+
+
+function isVnodeEmpty(vnodes) {
+  return vnodes.every(node => {
+
+    if (node.type === Comment) {
+      return true;
+    }
+
+    if (node.type === Text && typeof node.children === 'string' && !node.children.trim()) {
+      return true;
+    }
+
+    if (node.type === Fragment && isVnodeEmpty(node.children)) {
+      return true;
+    }
+
+    return false;
+
+  });
+}
+
+const hasDefaultContent = computed(() => {
+
+  if (props.label) {
+    return true;
+  }
+
+
+  const defaultContent = useSlots()?.default?.();
+
+  if (!defaultContent) {
+    return false;
+  }
+
+
+  return !isVnodeEmpty(defaultContent);
+
+});
+
 </script>
 
 
@@ -43,7 +87,7 @@ const emit = defineEmits([
       `u-color-${props.color}`,
       props.variant,
       {
-        'btn-icon-only': props.icon && !props.label && !$slots.default,
+        'btn-icon-only': props.icon && !hasDefaultContent,
         'btn-loading': props.loading,
       }
     ]">
@@ -61,7 +105,7 @@ const emit = defineEmits([
       :class="props.icon"
     />
 
-    <span v-if="props.label || $slots.default" data-no-reference>
+    <span v-if="hasDefaultContent" data-no-reference>
       {{ props.label }}
       <slot />
     </span>

@@ -129,6 +129,13 @@
       />
 
       <u-btn
+        icon="i-mdi-account"
+        variant="soft"
+        color="neutral">
+        <!-- empty default content to check for bug -->
+      </u-btn>
+
+      <u-btn
         icon="i-mdi-plus"
         variant="link"
         color="neutral"
@@ -143,11 +150,11 @@
     <div class="flex gap-2 mt-3 items-start">
 
       <u-btn
-        label="Button"
         variant="fill text-sm"
         color="neutral"
-        class="text-sm"
-      />
+        class="text-sm">
+        Button
+      </u-btn>
 
       <u-btn
         label="Button"
