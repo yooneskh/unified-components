@@ -49,5 +49,11 @@ useHead({
       </u-btn>
     </nuxt-link>
 
+    <nuxt-link to="/dialogs">
+      <u-btn>
+        Dialogs
+      </u-btn>
+    </nuxt-link>
+
   </div>
 </template>
