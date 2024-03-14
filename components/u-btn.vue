@@ -100,9 +100,9 @@ const hasDefaultContent = computed(() => {
       />
     </span>
 
-    <i
+    <u-icon
       v-if="props.icon"
-      :class="props.icon"
+      :name="props.icon"
     />
 
     <span v-if="hasDefaultContent" data-no-reference>
@@ -110,9 +110,9 @@ const hasDefaultContent = computed(() => {
       <slot />
     </span>
 
-    <i
+    <u-icon
       v-if="props.appendIcon"
-      :class="props.appendIcon"
+      :name="props.appendIcon"
     />
 
   </button>  

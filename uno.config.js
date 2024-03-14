@@ -37,7 +37,7 @@ export default defineConfig({
         px-[0.5em]
       `,
       'chip': `
-        px-[0.85em] py-[-0.5em] rounded-full
+        px-[0.85em] py-[0.2em] rounded-full
         inline-flex gap-[6px] items-center shrink-0
         relative overflow-hidden
       `,

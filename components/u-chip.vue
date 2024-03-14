@@ -40,17 +40,17 @@ const emit = defineEmits([
       props.variant,
     ]">
 
-    <i
+    <u-icon
       v-if="props.icon"
-      :class="props.icon"
+      :name="props.icon"
     />
 
     {{ props.label }}
     <slot />
 
-    <i
+    <u-icon
       v-if="props.appendIcon"
-      :class="props.appendIcon"
+      :name="props.appendIcon"
     />
 
   </span>  
