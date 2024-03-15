@@ -63,11 +63,13 @@ const modelValue = defineModel({
 
     <div class="flex items-start gap-2">
 
-      <u-icon
-        v-if="props.icon"
-        :name="props.icon"
-        class="mt-3"
-      />
+      <slot name="prepend">
+        <u-icon
+          v-if="props.icon"
+          :name="props.icon"
+          class="mt-3"
+        />
+      </slot>
 
       <textarea
         :type="props.type"
@@ -84,11 +86,13 @@ const modelValue = defineModel({
         v-model="modelValue"
       />
 
-      <u-icon
-        v-if="props.appendIcon"
-        :name="props.appendIcon"
-        class="mt-3"
-      />
+      <slot name="prepend">
+        <u-icon
+          v-if="props.appendIcon"
+          :name="props.appendIcon"
+          class="mt-3"
+        />
+      </slot>
 
     </div>
 

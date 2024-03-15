@@ -63,10 +63,12 @@ const modelValue = defineModel({
 
     <div class="flex items-center gap-2">
 
-      <u-icon
-        v-if="props.icon"
-        :name="props.icon"
-      />
+      <slot name="prepend">
+        <u-icon
+          v-if="props.icon"
+          :name="props.icon"
+        />
+      </slot>
 
       <input
         :type="props.type"
@@ -82,10 +84,12 @@ const modelValue = defineModel({
         v-model="modelValue"
       />
 
-      <u-icon
-        v-if="props.appendIcon"
-        :name="props.appendIcon"
-      />
+      <slot name="append">
+        <u-icon
+          v-if="props.appendIcon"
+          :name="props.appendIcon"
+        />
+      </slot>
 
     </div>
 
