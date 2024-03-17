@@ -19,6 +19,7 @@
   "files": [
     "./components/**/*",
     "./composables/**/*",
+    "./utils/**/*",
     "./nuxt.config.js",
     "./package.json",
     "./uno.config.js"
