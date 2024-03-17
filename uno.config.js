@@ -41,8 +41,19 @@ export default defineConfig({
         inline-flex gap-[6px] items-center shrink-0
         relative overflow-hidden
       `,
+      'card': `
+        p-[0.75em]
+        rounded-md
+        border shadow
+      `,
+      'alert': `
+        py-[0.5em] px-[1em]
+        rounded-lg
+        border
+      `,
       'interactive': `
         transition-transform active:scale-95
+        cursor-pointer
       `,
       'fill': `
         bg-[--u-color]

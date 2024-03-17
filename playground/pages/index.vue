@@ -91,5 +91,23 @@ useHead({
       </u-btn>
     </nuxt-link>
 
+    <nuxt-link to="/typographies">
+      <u-btn>
+        Typographies
+      </u-btn>
+    </nuxt-link>
+
+    <nuxt-link to="/cards">
+      <u-btn>
+        Cards
+      </u-btn>
+    </nuxt-link>
+
+    <nuxt-link to="/alerts">
+      <u-btn>
+        Alerts
+      </u-btn>
+    </nuxt-link>
+
   </div>
 </template>

@@ -36,44 +36,13 @@ const emit = defineEmits([
 
 /* content */
 
-import { Text, Fragment, Comment } from 'vue';
-
-
-function isVnodeEmpty(vnodes) {
-  return vnodes.every(node => {
-
-    if (node.type === Comment) {
-      return true;
-    }
-
-    if (node.type === Text && typeof node.children === 'string' && !node.children.trim()) {
-      return true;
-    }
-
-    if (node.type === Fragment && isVnodeEmpty(node.children)) {
-      return true;
-    }
-
-    return false;
-
-  });
-}
-
 const hasDefaultContent = computed(() => {
 
   if (props.label) {
     return true;
   }
 
-
-  const defaultContent = useSlots()?.default?.();
-
-  if (!defaultContent) {
-    return false;
-  }
-
-
-  return !isVnodeEmpty(defaultContent);
+  return !isSlotEmpty(useSlots().default);
 
 });
 
@@ -115,7 +84,7 @@ const hasDefaultContent = computed(() => {
       :name="props.appendIcon"
     />
 
-  </button>  
+  </button>
 </template>
 
 
