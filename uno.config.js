@@ -52,8 +52,11 @@ export default defineConfig({
         border
       `,
       'interactive': `
-        transition-transform active:scale-95
-        cursor-pointer
+        relative overflow-hidden transition cursor-pointer
+        after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition
+        hover:after:bg-black/10
+        active:after:bg-black/20
+        active:scale-98
       `,
       'fill': `
         bg-[--u-color]
@@ -76,17 +79,20 @@ export default defineConfig({
         transition
         hover:bg-[color-mix(in_srgb,var(--u-color)_20%,transparent)]
         active:bg-[color-mix(in_srgb,var(--u-color)_30%,transparent)]
+        after:hidden
         border-[2px] border-transparent
       `,
       'link': `
         bg-transparent
         text-[--u-color]
         hover:underline
+        after:hidden
         border-[2px] border-transparent
       `,
       'text': `
         bg-transparent
         text-[--u-color]
+        after:hidden
         border-[2px] border-transparent
       `,
     },

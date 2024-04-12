@@ -17,7 +17,7 @@ useHead({
 
 
 <template>
-  <div class="p-4 space-x-3">
+  <div class="p-4 flex gap-3 flex-wrap">
 
     <nuxt-link to="/buttons">
       <u-btn>
