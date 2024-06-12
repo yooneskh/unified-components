@@ -67,8 +67,8 @@ const modelValue = defineModel({
         {{ props.placeholder }}
       </option>
 
-      <option v-for="item of props.items" :key="item.value || item" :value="item.value || item">
-        {{ item.title || item }}
+      <option v-for="item of props.items" :key="item.value ?? item" :value="item.value ?? item">
+        {{ item.title ?? item }}
       </option>
 
       <slot />
