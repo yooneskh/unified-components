@@ -18,6 +18,10 @@ const props = defineProps({
     default: undefined,
   },
 
+  labelClasses: {
+    type: String,
+    default: undefined,
+  },
   containerClasses: {
     type: String,
     default: undefined,
@@ -71,6 +75,7 @@ const modelValue = defineModel({
       v-if="props.label"
       :text="props.label"
       class="ms-1"
+      :class="props.labelClasses"
     />
 
     <div class="flex items-center gap-2">
