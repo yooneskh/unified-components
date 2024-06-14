@@ -1,5 +1,7 @@
 <script setup>
 
+const modelValue = ref(['tag 1', 'tag 2']);
+
 </script>
 
 
@@ -12,15 +14,17 @@
 
     <div class="space-x-2 mt-3">
 
-      <u-input
-        label="Simple Input"
+      <u-tag-input
+        label="Simple Tag Input"
         placeholder="Enter value"
         icon="i-mdi-account"
-        inner-icon="i-mdi-home"
         append-inner-icon="i-mdi-office-building"
         append-icon="i-mdi-check"
         message="hello"
+        v-model="modelValue"
       />
+
+      <pre class="mt-4">{{ { modelValue } }}</pre>
 
     </div>
 

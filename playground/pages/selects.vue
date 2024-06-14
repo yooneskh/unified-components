@@ -20,6 +20,10 @@
           { value: 'other', title: 'Other' },
         ]"
         placeholder="Select value"
+        icon="i-mdi-account"
+        inner-icon="i-mdi-home"
+        append-inner-icon="i-mdi-cash"
+        append-icon="i-mdi-check"
         message="hello"
       />
 

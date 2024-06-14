@@ -57,9 +57,34 @@ const emit = defineEmits([
 
 
 const modelValue = defineModel({
-
+  type: Array,
 });
 
+
+/* input */
+
+const currentInput = ref('');
+
+
+function deleteValueAtIndex(index) {
+  modelValue.value = modelValue.value.filter((_, i) => i !== index);
+}
+
+function appendCurrentInput() {
+
+  if (!currentInput.value) {
+    return;
+  }
+
+
+  modelValue.value = [
+    ...(Array.isArray(modelValue.value) ? modelValue.value : []),
+    currentInput.value,
+  ];
+
+  currentInput.value = '';
+
+}
 
 </script>
 
@@ -100,17 +125,31 @@ const modelValue = defineModel({
           />
         </slot>
 
+        <slot name="chips">
+          <div v-if="modelValue?.length > 0" class="ms-2 flex flex-wrap items-center gap-1">
+            <u-chip
+              v-for="(value, index) of modelValue || []"
+              :label="value"
+              class="text-[0.8em]"
+              append-action-icon="i-mdi-close"
+              @click:append-action="deleteValueAtIndex(index);"
+            />
+          </div>
+        </slot>
+
         <input
           :type="props.type"
           :placeholder="props.placeholder"
           class="
             border-none rounded-none
             py-[0.4em] px-[0.7em]
-            w-full
+            w-0 grow min-w-[25%]
             block
           "
           :class="props.inputClasses"
-          v-model="modelValue"
+          v-model="currentInput"
+          @keyup.enter="appendCurrentInput()"
+          @keyup.escape="currentInput = '';"
         />
 
         <slot name="append-inner">

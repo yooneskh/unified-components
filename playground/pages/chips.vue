@@ -125,6 +125,29 @@
     </div>
 
     <div class="text-xl font-bold mt-4">
+      Actions
+    </div>
+
+    <div class="space-x-2 mt-3">
+
+      <u-chip
+        label="Chip"
+        append-action-icon="i-mdi-account"
+        variant="outline"
+        color="neutral"
+      />
+
+      <u-chip
+        label="Chip"
+        action-icon="i-mdi-account"
+        append-action-icon="i-mdi-plus"
+        variant="soft"
+        color="neutral"
+      />
+
+    </div>
+
+    <div class="text-xl font-bold mt-4">
       Sizes
     </div>
 

@@ -67,6 +67,12 @@ useHead({
       </u-btn>
     </nuxt-link>
 
+    <nuxt-link to="/tag-inputs">
+      <u-btn>
+        Tag Inputs
+      </u-btn>
+    </nuxt-link>
+
     <nuxt-link to="/textareas">
       <u-btn>
         Textareas
