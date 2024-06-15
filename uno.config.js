@@ -56,7 +56,6 @@ export default defineConfig({
         after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition
         hover:after:bg-black/10
         active:after:bg-black/20
-        active:scale-98
       `,
       'fill': `
         bg-[--u-color]
