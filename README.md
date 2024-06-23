@@ -20,20 +20,6 @@ export default defineConfig({
   presets: [
     preset,
   ],
-  theme: {
-    colors: {
-      'neutral': '#212121',
-      'on-neutral': '#FAFAFA',
-      'primary': '#3b82f6',
-      'on-primary': '#FAFAFA',
-      'secondary': '#2dd4bf',
-      'on-secondary': '#212121',
-      'success': '#22c55e',
-      'on-success': '#212121',
-      'error': '#ef4444',
-      'on-error': '#212121',
-    },
-  },
 });
 ```
 
@@ -45,4 +31,23 @@ export default defineNuxtConfig({
     'unified-components',
   ],
 });
+```
+
+`app.vue`
+
+```html
+<style>
+  :root {
+    --theme-neutral: #212121;
+    --theme-on-neutral: #FAFAFA;
+    --theme-primary: #3B82F6;
+    --theme-on-primary: #FAFAFA;
+    --theme-secondary: #2DD4BF;
+    --theme-on-secondary: #212121;
+    --theme-success: #22C55E;
+    --theme-on-success: #212121;
+    --theme-error: #EF4444;
+    --theme-on-error: #212121;
+  }
+</style>
 ```

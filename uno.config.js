@@ -12,17 +12,26 @@ export default defineConfig({
       },
     }),
   ],
+  extendTheme: (theme) => {
+    delete theme.colors.neutral;
+    return theme
+  },
   rules: [
     [
-      /^u-color-(\w+)$/,
-      ([ _, color ], { theme }) => {
-        if (theme.colors[color]) {
-          return {
-            '--u-color': theme?.colors?.[color],
-            '--u-on-color': theme?.colors?.['on-' + color],
-          };
+      /^text-(.+)$/,
+      ([ _, color ]) => {
+        return {
+          'color': `var(--theme-${color})`,
         }
-      },
+      }
+    ],
+    [
+      /^bg-(.+)$/,
+      ([ _, color ]) => {
+        return {
+          'background-color': `var(--theme-${color})`,
+        }
+      }
     ],
   ],
   shortcuts: [
@@ -97,7 +106,6 @@ export default defineConfig({
     },
   ],
   safelist: [
-    ...['neutral', 'primary', 'secondary', 'accent', 'info', 'success', 'error'].map(it => `u-color-${it}`), // colors
     ...['fill', 'outline', 'soft', 'ghost', 'link', 'text'], // variants
     ...['interactive'], // others
   ],

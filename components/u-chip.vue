@@ -45,12 +45,14 @@ const emit = defineEmits([
   <span
     class="chip"
     :class="[
-      `u-color-${props.color}`,
       props.variant,
       {
         'ps-[0.4em]': props.actionIcon || props.icon,
         'pe-[0.4em]': props.appendActionIcon || props.appendIcon,
       },
+    ]"
+    :style="[
+      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
     ]">
 
     <u-btn

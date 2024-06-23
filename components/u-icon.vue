@@ -19,5 +19,7 @@ const emit = defineEmits([
 
 
 <template>
-  <i :class="props.name" />
+  <i
+    :class="props.name"
+  />
 </template>

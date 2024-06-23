@@ -64,7 +64,12 @@ const emit = defineEmits([
 
 
 <template>
-  <div class="card" :class="[ `u-color-${props.color}`, props.variant ]">
+  <div
+    class="card"
+    :class="[ props.variant ]"
+    :style="[
+      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
+    ]">
 
     <u-typography v-bind="props">
       <template v-if="$slots.title" #title><slot name="title" /></template>

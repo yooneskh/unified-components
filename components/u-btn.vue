@@ -53,12 +53,14 @@ const hasDefaultContent = computed(() => {
   <button
     class="btn"
     :class="[
-      `u-color-${props.color}`,
       props.variant,
       {
         'btn-icon-only': props.icon && !hasDefaultContent,
         'btn-loading': props.loading,
       }
+    ]"
+    :style="[
+      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
     ]">
 
     <span
