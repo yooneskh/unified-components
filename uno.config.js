@@ -16,24 +16,6 @@ export default defineConfig({
     delete theme.colors.neutral;
     return theme
   },
-  rules: [
-    [
-      /^text-(.+)$/,
-      ([ _, color ]) => {
-        return {
-          'color': `var(--theme-${color})`,
-        }
-      }
-    ],
-    [
-      /^bg-(.+)$/,
-      ([ _, color ]) => {
-        return {
-          'background-color': `var(--theme-${color})`,
-        }
-      }
-    ],
-  ],
   shortcuts: [
     {
       'btn': `

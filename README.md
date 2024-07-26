@@ -9,7 +9,7 @@ bun i unified-components --exact
 
 2- Configure
 
-`uno.config.js`
+`/uno.config.js`
 
 ```js
 import { defineConfig } from 'unocss';
@@ -23,31 +23,27 @@ export default defineConfig({
 });
 ```
 
-`nuxt.config.js`
+`/nuxt.config.js`
 
 ```js
 export default defineNuxtConfig({
   extends: [
     'unified-components',
   ],
+  unifiedComponents: {
+    theme: {
+      'neutral': '#212121',
+      'on-neutral': '#FAFAFA',
+      'primary': '#3B82F6',
+      'on-primary': '#FAFAFA',
+      'secondary': '#2DD4BF',
+      'on-secondary': '#212121',
+      'success': '#22C55E',
+      'on-success': '#212121',
+      'error': '#EF4444',
+      'on-error': '#212121',
+    },
+  },
 });
 ```
 
-`app.vue`
-
-```html
-<style>
-  :root {
-    --theme-neutral: #212121;
-    --theme-on-neutral: #FAFAFA;
-    --theme-primary: #3B82F6;
-    --theme-on-primary: #FAFAFA;
-    --theme-secondary: #2DD4BF;
-    --theme-on-secondary: #212121;
-    --theme-success: #22C55E;
-    --theme-on-success: #212121;
-    --theme-error: #EF4444;
-    --theme-on-error: #212121;
-  }
-</style>
-```

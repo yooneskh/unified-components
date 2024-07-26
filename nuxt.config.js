@@ -1,9 +1,9 @@
 
 
 export default defineNuxtConfig({
-  modules: [
-    '@unocss/nuxt',
-  ],
+  future: {
+    compatibilityVersion: 4,
+  },
   css: [
     '@unocss/reset/tailwind-compat.css',
   ],
