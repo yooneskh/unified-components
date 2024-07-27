@@ -12,8 +12,8 @@
   "dependencies": {
     "@floating-ui/vue": "1.1.2",
     "@iconify-json/mdi": "1.1.67",
-    "@unocss/nuxt": "0.61.5",
-    "@unocss/reset": "0.61.5",
+    "@unocss/nuxt": "0.61.6",
+    "@unocss/reset": "0.61.6",
     "@vueuse/core": "10.11.0"
   },
   "files": [

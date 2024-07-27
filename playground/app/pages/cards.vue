@@ -36,7 +36,7 @@
         icon="i-mdi-account">
 
         <template #append>
-          <u-btn>
+          <u-btn class="fill neutral">
             Action
           </u-btn>
         </template>
@@ -48,7 +48,7 @@
         subtitle="Wednesday"
         text="This is a simple card for you."
         icon="i-mdi-account"
-        variant="outline interactive"
+        class="outline interactive"
       />
 
     </div>

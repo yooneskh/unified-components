@@ -12,7 +12,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -21,7 +21,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-dropdown placement="top">
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -30,7 +30,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-dropdown placement="left">
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -39,7 +39,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-dropdown placement="right">
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -56,7 +56,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Click
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -65,7 +65,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Hover
         <u-dropdown trigger="hover">
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -82,7 +82,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Multiline Text
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -96,7 +96,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Markup
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -105,7 +105,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Image
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -125,7 +125,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         No Persist
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -134,7 +134,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Full Persist
         <u-dropdown persist>
           <div class="bg-white text-dark p-2 border shadow rounded-lg">
@@ -143,7 +143,7 @@
         </u-dropdown>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Content Persist
         <u-dropdown persist="content">
           <div class="bg-white text-dark p-2 border shadow rounded-lg">

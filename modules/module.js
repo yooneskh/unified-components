@@ -26,7 +26,7 @@ export default defineNuxtModule({
         return `
           export default defineNuxtPlugin(nuxt => {
             useHead({
-              style: ':root { ${Object.entries(options.theme).map(it => `--theme-${it[0]}: ${it[1]};`).join(' ')} }',
+              style: ':root { ${Object.entries(options.theme).map(it => `--theme-${it[0]}: ${it[1]};`).join(' ')} } ${Object.keys(options.theme).filter(it => !it.startsWith('on')).map(it => `.${it} { --u-color: var(--theme-${it}); --u-on-color: var(--theme-on-${it}); }`).join(' ')}',
             });
           });
         `;

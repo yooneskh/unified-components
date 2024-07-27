@@ -45,15 +45,6 @@ const props = defineProps({
     default: undefined,
   },
 
-  variant: {
-    type: String,
-    default: 'fill',
-  },
-  color: {
-    type: String,
-    default: 'neutral',
-  },
-
 });
 
 const emit = defineEmits([
@@ -64,12 +55,7 @@ const emit = defineEmits([
 
 
 <template>
-  <div
-    class="alert"
-    :class="[ props.variant ]"
-    :style="[
-      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
-    ]">
+  <div class="alert">
 
     <u-typography v-bind="props" interchange-text>
       <template v-if="$slots.title" #title><slot name="title" /></template>

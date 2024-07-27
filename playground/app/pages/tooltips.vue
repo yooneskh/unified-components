@@ -12,28 +12,28 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-tooltip>
           Hello
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-tooltip placement="bottom">
           Hello
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-tooltip placement="left">
           Hello
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Button
         <u-tooltip placement="right">
           Hello
@@ -48,14 +48,14 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Click
         <u-tooltip trigger="click">
           Hello
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Hover
         <u-tooltip>
           Hello
@@ -70,12 +70,12 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Simple Text Prop
         <u-tooltip text="Hello" />
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Multiline Text
         <u-tooltip>
           <p>
@@ -87,14 +87,14 @@
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Markup
         <u-tooltip>
           This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account" />
         </u-tooltip>
       </u-btn>
 
-      <u-btn>
+      <u-btn class="fill neutral">
         Image
         <u-tooltip class="py-2">
           <p>

@@ -12,10 +12,6 @@ export default defineConfig({
       },
     }),
   ],
-  extendTheme: (theme) => {
-    delete theme.colors.neutral;
-    return theme
-  },
   shortcuts: [
     {
       'btn': `
@@ -88,7 +84,6 @@ export default defineConfig({
     },
   ],
   safelist: [
-    ...['fill', 'outline', 'soft', 'ghost', 'link', 'text'], // variants
     ...['interactive'], // others
   ],
 });

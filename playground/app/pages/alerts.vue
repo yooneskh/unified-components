@@ -30,7 +30,7 @@
       <u-alert
         text="This is a simple alert for you."
         icon="i-mdi-account"
-        variant="outline"
+        class="outline"
       />
 
     </div>

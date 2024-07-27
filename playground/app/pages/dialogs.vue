@@ -19,8 +19,7 @@ const d4 = ref(false);
 
       <u-btn
         label="Simple"
-        variant="fill"
-        color="neutral"
+        class="fill neutral"
         @click="d1 = !d1;"
       />
 
@@ -29,7 +28,7 @@ const d4 = ref(false);
           <p>
             Hello There!
           </p>
-          <u-btn class="mt-2">
+          <u-btn class="fill neutral mt-2">
             A Button With Tooltip!
             <u-tooltip text="Hello!" />
           </u-btn>
@@ -38,8 +37,7 @@ const d4 = ref(false);
 
       <u-btn
         label="Nested Dialogs"
-        variant="fill"
-        color="neutral"
+        class="fill neutral"
         @click="d2 = !d2;"
       />
 
@@ -47,6 +45,7 @@ const d4 = ref(false);
         <div class="p-20 bg-white rounded-md text-center">
           <u-btn
             label="Open Next"
+            class="fill neutral"
             @click="d3 = !d3;"
           />
         </div>
@@ -63,8 +62,7 @@ const d4 = ref(false);
 
       <u-btn
         label="Stick To Bottom"
-        variant="fill"
-        color="neutral"
+        class="fill neutral"
         @click="d4 = !d4;"
       />
 

@@ -14,15 +14,6 @@ const props = defineProps({
     type: String,
   },
 
-  variant: {
-    type: String,
-    default: 'fill',
-  },
-  color: {
-    type: String,
-    default: 'neutral',
-  },
-
   loading: {
     type: Boolean,
   },
@@ -52,16 +43,10 @@ const hasDefaultContent = computed(() => {
 <template>
   <button
     class="btn"
-    :class="[
-      props.variant,
-      {
-        'btn-icon-only': props.icon && !hasDefaultContent,
-        'btn-loading': props.loading,
-      }
-    ]"
-    :style="[
-      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
-    ]">
+    :class="{
+      'btn-icon-only': props.icon && !hasDefaultContent,
+      'btn-loading': props.loading,
+    }">
 
     <span
       v-if="props.loading"

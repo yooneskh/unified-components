@@ -135,7 +135,7 @@ function appendCurrentInput() {
             <u-chip
               v-for="(value, index) of modelValue || []"
               :label="value"
-              class="text-[0.8em]"
+              class="soft neutral text-[0.8em]"
               append-action-icon="i-mdi-close"
               @click:append-action="deleteValueAtIndex(index);"
             />

@@ -22,15 +22,6 @@ const props = defineProps({
     type: String,
   },
 
-  variant: {
-    type: String,
-    default: 'soft',
-  },
-  color: {
-    type: String,
-    default: 'neutral',
-  },
-
 });
 
 const emit = defineEmits([
@@ -44,16 +35,10 @@ const emit = defineEmits([
 <template>
   <span
     class="chip"
-    :class="[
-      props.variant,
-      {
-        'ps-[0.4em]': props.actionIcon || props.icon,
-        'pe-[0.4em]': props.appendActionIcon || props.appendIcon,
-      },
-    ]"
-    :style="[
-      props.color && `--u-color: var(--theme-${props.color}); --u-on-color: var(--theme-on-${props.color})`,
-    ]">
+    :class="{
+      'ps-[0.4em]': props.actionIcon || props.icon,
+      'pe-[0.4em]': props.appendActionIcon || props.appendIcon,
+    }">
 
     <u-btn
       v-if="props.actionIcon"
