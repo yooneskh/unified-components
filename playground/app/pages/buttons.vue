@@ -1,5 +1,17 @@
 <script setup>
 
+async function onClickHandler() {
+  console.log('starting');
+  await new Promise(r => setTimeout(r, 2000));
+  console.log('finished');
+}
+
+async function onClickHandlerError() {
+  console.log('starting');
+  await new Promise((res, rej) => setTimeout(rej, 2000));
+  console.log('finished');
+}
+
 </script>
 
 
@@ -220,6 +232,32 @@
         icon="i-mdi-account"
         class="text neutral"
         loading
+      />
+
+    </div>
+
+    <div class="text-xl font-bold mt-4">
+      Click Handlers
+    </div>
+
+    <div class="flex gap-2 mt-3 items-start">
+
+      <u-btn
+        label="Non Async"
+        class="fill neutral"
+        :click-handler="() => console.log('was clicked')"
+      />
+
+      <u-btn
+        label="Async (2 Sec)"
+        class="fill neutral"
+        :click-handler="onClickHandler"
+      />
+
+      <u-btn
+        label="Async Error (2 Sec)"
+        class="fill neutral"
+        :click-handler="onClickHandlerError"
       />
 
     </div>

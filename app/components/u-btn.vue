@@ -18,6 +18,10 @@ const props = defineProps({
     type: Boolean,
   },
 
+  clickHandler: {
+    type: Function,
+  },
+
 });
 
 const emit = defineEmits([
@@ -37,6 +41,31 @@ const hasDefaultContent = computed(() => {
 
 });
 
+
+/* click handler */
+
+const loading = ref(false);
+
+async function handleClick() {
+
+  if (typeof props.clickHandler !== 'function') {
+    return;
+  }
+
+  loading.value = true;
+
+  try {
+    await props.clickHandler?.()
+  }
+  catch (error) {
+    throw error;
+  }
+  finally {
+    loading.value = false;
+  }
+
+}
+
 </script>
 
 
@@ -45,11 +74,12 @@ const hasDefaultContent = computed(() => {
     class="btn"
     :class="{
       'btn-icon-only': props.icon && !hasDefaultContent,
-      'btn-loading': props.loading,
-    }">
+      'btn-loading': props.loading || loading,
+    }"
+    @click="handleClick()">
 
     <span
-      v-if="props.loading"
+      v-if="props.loading || loading"
       class="btn-loader absolute flex items-center justify-center inset-0 bg-white/50">
       <u-spinner
         class="h-1em"
