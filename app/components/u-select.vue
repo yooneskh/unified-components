@@ -91,9 +91,10 @@ const modelValue = defineModel({
       <div
         class="
           border border-2
+          focus-within:border-primary transition-border
           rounded-md
           block w-full
-          flex items-center gap-2
+          flex items-center
         "
         :class="containerClasses">
 
@@ -107,8 +108,7 @@ const modelValue = defineModel({
 
         <select
           class="
-            border-none
-            rounded-none
+            border-none rounded-none
             bg-transparent
             py-[0.5em] px-[0.7em]
             w-full

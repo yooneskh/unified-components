@@ -76,7 +76,9 @@ const modelValue = defineModel({
         :placeholder="props.placeholder"
         :rows="props.rows"
         class="
-          border border-2
+          border border-2 outline-none
+          focus-within:border-primary transition-border
+          bg-transparent
           rounded-md
           py-[0.4em] px-[0.7em]
           w-full

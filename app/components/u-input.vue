@@ -91,9 +91,10 @@ const modelValue = defineModel({
       <div
         class="
           border border-2
+          focus-within:border-primary transition-border
           rounded-md
           block w-full
-          flex items-center gap-2
+          flex items-center
         "
         :class="containerClasses">
 
@@ -109,7 +110,8 @@ const modelValue = defineModel({
           :type="props.type"
           :placeholder="props.placeholder"
           class="
-            border-none rounded-none
+            border-none rounded-none outline-none
+            bg-transparent
             py-[0.4em] px-[0.7em]
             w-full
             block
