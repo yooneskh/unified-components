@@ -8,5 +8,6 @@
     "serve": "nuxt dev --port 8080",
     "postinstall": "nuxt prepare"
   },
-  "type": "module"
+  "type": "module",
+  "version": "0.0.1"
 }

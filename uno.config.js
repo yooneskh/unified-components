@@ -19,6 +19,7 @@ export default defineConfig({
         inline-flex gap-[6px] items-center shrink-0
         relative overflow-hidden
         interactive
+        disabled:opacity-60 disabled:cursor-not-allowed
       `,
       'btn-icon-only': `
         px-[0.5em]
@@ -38,11 +39,36 @@ export default defineConfig({
         rounded-lg
         border
       `,
+      'input-container': `
+        border border-2
+        focus-within:border-primary transition-border
+        rounded-md
+        block w-full
+        flex items-center
+      `,
+      'input-element': `
+        border-none rounded-none outline-none
+        bg-transparent
+        py-[0.4em] px-[0.7em]
+        w-full
+        block
+        disabled:opacity-60 disabled:cursor-not-allowed
+      `,
+      'input-textarea': `
+        border border-2 outline-none
+        focus-within:border-primary transition-border
+        bg-transparent
+        rounded-md
+        py-[0.4em] px-[0.7em]
+        w-full
+        block
+        disabled:opacity-60 disabled:cursor-not-allowed
+      `,
       'interactive': `
         relative overflow-hidden transition cursor-pointer
         after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition
-        hover:after:bg-black/10
-        active:after:bg-black/20
+        hover:enabled:after:bg-black/10
+        active:enabled:after:bg-black/20
       `,
       'fill': `
         bg-[--u-color]
@@ -63,8 +89,8 @@ export default defineConfig({
         bg-[color-mix(in_srgb,var(--u-color)_0%,transparent)]
         text-[--u-color]
         transition
-        hover:bg-[color-mix(in_srgb,var(--u-color)_20%,transparent)]
-        active:bg-[color-mix(in_srgb,var(--u-color)_30%,transparent)]
+        hover:enabled:bg-[color-mix(in_srgb,var(--u-color)_20%,transparent)]
+        active:enabled:bg-[color-mix(in_srgb,var(--u-color)_30%,transparent)]
         after:hidden
         border-[2px] border-transparent
       `,

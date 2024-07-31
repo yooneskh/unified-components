@@ -114,13 +114,7 @@ function appendCurrentInput() {
       </slot>
 
       <div
-        class="
-          border border-2
-          focus-within:border-primary transition-border
-          rounded-md
-          block w-full
-          flex items-center
-        "
+        class="input-container"
         :class="containerClasses">
 
         <slot name="prepend-inner">
@@ -137,21 +131,19 @@ function appendCurrentInput() {
               v-for="(value, index) of modelValue || []"
               :label="value"
               class="soft neutral text-[0.8em]"
-              append-action-icon="i-mdi-close"
+              :append-action-icon="!('disabled' in $attrs) ? 'i-mdi-close' : undefined"
               @click:append-action="deleteValueAtIndex(index);"
             />
           </div>
         </slot>
 
         <input
+          v-bind="$attrs"
           :type="props.type"
           :placeholder="props.placeholder"
           class="
-            border-none rounded-none outline-none
-            bg-transparent
-            py-[0.4em] px-[0.7em]
-            w-0 grow min-w-[25%]
-            block
+            input-element
+            w-0 grow min-w-1/4
           "
           :class="props.inputClasses"
           v-model="currentInput"

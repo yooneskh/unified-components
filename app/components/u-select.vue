@@ -89,13 +89,7 @@ const modelValue = defineModel({
       </slot>
 
       <div
-        class="
-          border border-2
-          focus-within:border-primary transition-border
-          rounded-md
-          block w-full
-          flex items-center
-        "
+        class="input-container"
         :class="containerClasses">
 
         <slot name="prepend-inner">
@@ -107,13 +101,8 @@ const modelValue = defineModel({
         </slot>
 
         <select
-          class="
-            border-none rounded-none
-            bg-transparent
-            py-[0.5em] px-[0.7em]
-            w-full
-            block
-          "
+          v-bind="$attrs"
+          class="input-element me-2"
           :class="props.inputClasses"
           v-model="modelValue">
 

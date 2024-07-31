@@ -72,18 +72,11 @@ const modelValue = defineModel({
       </slot>
 
       <textarea
+        v-bind="$attrs"
         :type="props.type"
         :placeholder="props.placeholder"
         :rows="props.rows"
-        class="
-          border border-2 outline-none
-          focus-within:border-primary transition-border
-          bg-transparent
-          rounded-md
-          py-[0.4em] px-[0.7em]
-          w-full
-          block
-        "
+        class="input-textarea"
         :class="props.inputClasses"
         v-model="modelValue"
       />
