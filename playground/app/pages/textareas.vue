@@ -10,7 +10,7 @@
       Modes
     </div>
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 space-y-4 mt-3">
 
       <u-textarea
         label="Simple Input"
@@ -19,6 +19,16 @@
         icon="i-mdi-account"
         append-icon="i-mdi-check"
         message="hello"
+      />
+
+      <u-textarea
+        label="Disabled Input"
+        rows="4"
+        placeholder="Enter value"
+        icon="i-mdi-account"
+        append-icon="i-mdi-check"
+        message="hello"
+        disabled
       />
 
     </div>

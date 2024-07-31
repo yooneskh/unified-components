@@ -12,7 +12,7 @@ const modelValue = ref(['tag 1', 'tag 2']);
       Modes
     </div>
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 space-y-4 mt-3">
 
       <u-tag-input
         label="Simple Tag Input"
@@ -21,6 +21,17 @@ const modelValue = ref(['tag 1', 'tag 2']);
         append-inner-icon="i-mdi-office-building"
         append-icon="i-mdi-check"
         message="hello"
+        v-model="modelValue"
+      />
+
+      <u-tag-input
+        label="Disabled Tag Input"
+        placeholder="Enter value"
+        icon="i-mdi-account"
+        append-inner-icon="i-mdi-office-building"
+        append-icon="i-mdi-check"
+        message="hello"
+        disabled
         v-model="modelValue"
       />
 

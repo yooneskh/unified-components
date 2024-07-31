@@ -262,5 +262,34 @@ async function onClickHandlerError() {
 
     </div>
 
+    <div class="text-xl font-bold mt-4">
+      Disabled
+    </div>
+
+    <div class="flex gap-2 mt-3 items-start">
+
+      <u-btn
+        label="Disabled"
+        class="fill neutral"
+        disabled
+        @click="console.log('clicked');"
+      />
+
+      <u-btn
+        label="Disabled"
+        class="soft secondary"
+        disabled
+        :click-handler="() => console.log('clicked')"
+      />
+
+      <u-btn
+        label="Disabled"
+        class="ghost error"
+        disabled
+        :click-handler="() => console.log('clicked')"
+      />
+
+    </div>
+
   </div>
 </template>
