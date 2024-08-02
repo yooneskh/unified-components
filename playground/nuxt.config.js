@@ -10,6 +10,8 @@ export default defineNuxtConfig({
   ],
   unifiedComponents: {
     theme: {
+      'surface': '#FAFAFA',
+      'on-surface': '#212121',
       'neutral': '#212121',
       'on-neutral': '#FAFAFA',
       'primary': '#3B82F6',
@@ -20,8 +22,6 @@ export default defineNuxtConfig({
       'on-success': '#212121',
       'error': '#EF4444',
       'on-error': '#212121',
-      'surface': '#FAFAFA',
-      'on-surface': '#212121',
     },
   },
 });

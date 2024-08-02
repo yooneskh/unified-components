@@ -1,4 +1,23 @@
 # Unified Components
+
+## Capabilities
+
+General capabilities added through UnoCSS
+- [Variant groups](https://unocss.dev/transformers/variant-group)
+  - `class="hover:(text-black underline)"`
+- [Directives](https://unocss.dev/transformers/directives)
+  - ```css
+      .custom-div {
+        --at-apply: "text-center my-0 font-medium";
+      }
+    ```
+  - `@screen xs { ... }`
+  - `@screen lt-lg { ... }`
+  - `@screen at-lg { ... }`
+  - `background-color: theme('colors.blue.500');`
+- [Compile classes](https://unocss.dev/transformers/compile-class)
+  - `<div class=":uno: text-center sm:text-left">...</div>`
+
 ## How to use
 
 1- Install
@@ -9,21 +28,25 @@ bun i unified-components --exact
 
 2- Configure
 
-`/uno.config.js`
+`~/uno.config.js`
 
 ```js
-import { defineConfig } from 'unocss';
-import preset from 'unified-components/uno.config.js';
-
+import { defineConfig, transformerCompileClass, transformerDirectives, transformerVariantGroup } from 'unocss';
+import config from 'unified-components/uno.config.js';
 
 export default defineConfig({
   presets: [
-    preset,
+    config,
+  ],
+  transformers: [
+    transformerVariantGroup(),
+    transformerDirectives(),
+    transformerCompileClass(),
   ],
 });
 ```
 
-`/nuxt.config.js`
+`~/nuxt.config.js`
 
 ```js
 export default defineNuxtConfig({
@@ -32,6 +55,8 @@ export default defineNuxtConfig({
   ],
   unifiedComponents: {
     theme: {
+      'surface': '#FAFAFA',
+      'on-surface': '#212121',
       'neutral': '#212121',
       'on-neutral': '#FAFAFA',
       'primary': '#3B82F6',
@@ -47,3 +72,13 @@ export default defineNuxtConfig({
 });
 ```
 
+`~/app/app.vue`
+
+```html
+<style>
+  :root {
+    color: theme('colors.on-surface');
+    background-color: theme('colors.surface');
+  }
+</style>
+```

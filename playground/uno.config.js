@@ -1,9 +1,13 @@
-import { defineConfig } from 'unocss';
-import preset from '../uno.config.js';
-
+import { defineConfig, transformerCompileClass, transformerDirectives, transformerVariantGroup } from 'unocss';
+import config from '../uno.config.js';
 
 export default defineConfig({
   presets: [
-    preset,
+    config,
+  ],
+  transformers: [
+    transformerVariantGroup(),
+    transformerDirectives(),
+    transformerCompileClass(),
   ],
 });

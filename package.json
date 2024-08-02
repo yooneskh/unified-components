@@ -17,9 +17,8 @@
     "@vueuse/core": "10.11.0"
   },
   "files": [
-    "./components/**/*",
-    "./composables/**/*",
-    "./utils/**/*",
+    "./app/**/*",
+    "./modules/**/*",
     "./nuxt.config.js",
     "./package.json",
     "./uno.config.js"

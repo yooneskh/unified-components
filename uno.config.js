@@ -110,7 +110,4 @@ export default defineConfig({
       `,
     },
   ],
-  safelist: [
-    ...['interactive'], // others
-  ],
 });
