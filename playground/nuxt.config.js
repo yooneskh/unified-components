@@ -20,6 +20,8 @@ export default defineNuxtConfig({
       'on-success': '#212121',
       'error': '#EF4444',
       'on-error': '#212121',
+      'surface': '#FAFAFA',
+      'on-surface': '#212121',
     },
   },
 });

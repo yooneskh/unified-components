@@ -33,6 +33,7 @@ export default defineConfig({
         p-[0.75em]
         rounded-md
         border shadow
+        surface
       `,
       'alert': `
         py-[0.5em] px-[1em]
