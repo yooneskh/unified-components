@@ -48,7 +48,7 @@
         subtitle="Wednesday"
         text="This is a simple card for you."
         icon="i-mdi-account"
-        class="outline interactive"
+        class="outline neutral interactive"
       />
 
     </div>

@@ -55,7 +55,7 @@ const emit = defineEmits([
 
 
 <template>
-  <div class="card">
+  <div class="card fill surface">
 
     <u-typography v-bind="props">
       <template v-if="$slots.title" #title><slot name="title" /></template>

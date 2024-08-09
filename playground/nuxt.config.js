@@ -20,8 +20,8 @@ export default defineNuxtConfig({
       'on-secondary': '#212121',
       'success': '#22C55E',
       'on-success': '#212121',
-      'error': '#EF4444',
-      'on-error': '#212121',
+      'danger': '#EF4444',
+      'on-danger': '#212121',
     },
   },
 });

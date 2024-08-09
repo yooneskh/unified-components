@@ -44,7 +44,7 @@ const hasDefaultContent = computed(() => {
 
 /* click handler */
 
-const loading = ref(false);
+const innerLoading = ref(false);
 
 async function handleClick() {
 
@@ -52,7 +52,7 @@ async function handleClick() {
     return;
   }
 
-  loading.value = true;
+  innerLoading.value = true;
 
   try {
     await props.clickHandler?.()
@@ -61,7 +61,7 @@ async function handleClick() {
     throw error;
   }
   finally {
-    loading.value = false;
+    innerLoading.value = false;
   }
 
 }
@@ -74,12 +74,13 @@ async function handleClick() {
     class="btn"
     :class="{
       'btn-icon-only': props.icon && !hasDefaultContent,
-      'btn-loading': props.loading || loading,
+      'btn-loading': props.loading || innerLoading,
     }"
+    :disabled="$attrs.disabled || props.loading || innerLoading"
     @click="handleClick()">
 
     <span
-      v-if="props.loading || loading"
+      v-if="props.loading || innerLoading"
       class="btn-loader absolute flex items-center justify-center inset-0 bg-white/50">
       <u-spinner
         class="h-1em"

@@ -25,12 +25,13 @@
       <u-alert
         text="This is a simple alert for you."
         icon="i-mdi-account"
+        class="fill primary"
       />
 
       <u-alert
         text="This is a simple alert for you."
         icon="i-mdi-account"
-        class="outline"
+        class="outline danger"
       />
 
     </div>
