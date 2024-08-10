@@ -25,6 +25,10 @@ async function onClickHandlerError() {
     <div class="space-x-2 mt-3">
 
       <u-btn
+        label="Default (Fill)"
+      />
+
+      <u-btn
         label="Fill"
         class="fill neutral"
       />
@@ -63,6 +67,10 @@ async function onClickHandlerError() {
     <div class="space-x-2 mt-3">
 
       <u-btn
+        label="Default (Neutral)"
+      />
+
+      <u-btn
         label="Neutral"
         class="fill neutral"
       />
@@ -84,12 +92,12 @@ async function onClickHandlerError() {
 
       <u-btn
         label="Error"
-        class="ghost error"
+        class="ghost danger"
       />
 
       <u-btn
         label="Error"
-        class="link error"
+        class="link danger"
       />
 
     </div>
@@ -284,7 +292,7 @@ async function onClickHandlerError() {
 
       <u-btn
         label="Disabled"
-        class="ghost error"
+        class="ghost danger"
         disabled
         :click-handler="() => console.log('clicked')"
       />

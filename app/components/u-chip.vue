@@ -34,17 +34,17 @@ const emit = defineEmits([
 
 <template>
   <span
-    class="chip"
+    class="chip fill neutral"
     :class="{
-      'ps-[0.4em]': props.actionIcon || props.icon,
-      'pe-[0.4em]': props.appendActionIcon || props.appendIcon,
+      'chip-start-icon': props.actionIcon || props.icon,
+      'chip-end-icon': props.appendActionIcon || props.appendIcon,
     }">
 
     <u-btn
       v-if="props.actionIcon"
       variant="ghost"
       :icon="props.actionIcon"
-      class="text-[0.8em] rounded-full p-[0.2em]"
+      class="chip-button"
       @click="emit('click:action')"
     />
 
@@ -65,7 +65,7 @@ const emit = defineEmits([
       v-if="props.appendActionIcon"
       variant="ghost"
       :icon="props.appendActionIcon"
-      class="text-[0.85em] rounded-full p-[0.2em]"
+      class="chip-button"
       @click="emit('click:append-action')"
     />
 

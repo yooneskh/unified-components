@@ -13,6 +13,10 @@
     <div class="space-x-2 mt-3">
 
       <u-chip
+        label="Default (Fill)"
+      />
+
+      <u-chip
         label="Fill"
         class="fill neutral"
       />
@@ -51,33 +55,32 @@
     <div class="space-x-2 mt-3">
 
       <u-chip
-        label="Fill"
+        label="Default (Neutral)"
+      />
+
+      <u-chip
+        label="Primary"
         class="fill primary"
       />
 
       <u-chip
-        label="Outline"
+        label="Secondary"
         class="outline secondary"
       />
 
       <u-chip
-        label="Soft"
+        label="Success"
         class="soft success"
       />
 
       <u-chip
-        label="Ghost"
-        class="ghost error"
+        label="Danger"
+        class="ghost danger"
       />
 
       <u-chip
-        label="Link"
+        label="Success"
         class="link success"
-      />
-
-      <u-chip
-        label="Text"
-        class="text teal"
       />
 
     </div>

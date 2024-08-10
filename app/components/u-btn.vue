@@ -71,7 +71,7 @@ async function handleClick() {
 
 <template>
   <button
-    class="btn"
+    class="btn fill neutral"
     :class="{
       'btn-icon-only': props.icon && !hasDefaultContent,
       'btn-loading': props.loading || innerLoading,
@@ -81,7 +81,7 @@ async function handleClick() {
 
     <span
       v-if="props.loading || innerLoading"
-      class="btn-loader absolute flex items-center justify-center inset-0 bg-white/50">
+      class="btn-loader">
       <u-spinner
         class="h-1em"
       />

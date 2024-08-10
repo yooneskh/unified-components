@@ -27,6 +27,7 @@
         subtitle="Wednesday"
         text="This is a simple card for you."
         icon="i-mdi-account"
+        class="primary"
       />
 
       <u-card
@@ -48,7 +49,7 @@
         subtitle="Wednesday"
         text="This is a simple card for you."
         icon="i-mdi-account"
-        class="outline neutral interactive"
+        class="soft danger interactive"
       />
 
     </div>

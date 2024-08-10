@@ -55,7 +55,7 @@ const emit = defineEmits([
 
 
 <template>
-  <div class="alert">
+  <div class="alert fill neutral">
 
     <u-typography v-bind="props" interchange-text>
       <template v-if="$slots.title" #title><slot name="title" /></template>

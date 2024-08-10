@@ -13,7 +13,7 @@
     <div class="space-y-8 mt-3">
 
       <u-alert
-        text="This is a simple alert for you."
+        text="This is a simple alert for you. (Default)"
       />
 
       <u-alert
@@ -25,13 +25,13 @@
       <u-alert
         text="This is a simple alert for you."
         icon="i-mdi-account"
-        class="fill primary"
+        class="primary"
       />
 
       <u-alert
         text="This is a simple alert for you."
         icon="i-mdi-account"
-        class="outline danger"
+        class="outline danger interactive"
       />
 
     </div>

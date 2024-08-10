@@ -72,9 +72,9 @@ const floaterProp = reactiveOmit(props, [ 'text', 'class' ]);
 
 <template>
   <u-floater v-bind="floaterProp" v-model="modelValue">
-    <div class="px-2 py-1 rounded-lg bg-neutral text-on-neutral" :class="props.class">
+    <u-card class="tooltip-content fill neutral" :class="props.class">
       {{ props.text }}
       <slot />
-    </div>
+    </u-card>
   </u-floater>
 </template>

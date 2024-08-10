@@ -10,11 +10,11 @@
     "nuxt": "3.12.4"
   },
   "dependencies": {
-    "@floating-ui/vue": "1.1.2",
-    "@iconify-json/mdi": "1.1.67",
+    "@floating-ui/vue": "1.1.4",
+    "@iconify-json/mdi": "1.1.68",
     "@unocss/nuxt": "0.61.9",
     "@unocss/reset": "0.61.9",
-    "@vueuse/core": "10.11.0"
+    "@vueuse/core": "10.11.1"
   },
   "files": [
     "./app/**/*",

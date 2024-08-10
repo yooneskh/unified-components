@@ -12,7 +12,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Button
         <u-floater>
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -21,7 +21,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Button
         <u-floater placement="top">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -30,7 +30,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Button
         <u-floater placement="left">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -39,7 +39,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Button
         <u-floater placement="right">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -56,7 +56,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Click
         <u-floater>
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -65,7 +65,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Hover
         <u-floater trigger="hover">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -82,7 +82,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn class="fill neutral">
+      <u-btn>
         No persist
         <u-floater>
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -91,7 +91,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Full Persist
         <u-floater persist>
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -100,7 +100,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Content Persist
         <u-floater persist="content">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -117,7 +117,7 @@
 
     <div class="flex gap-2 mt-3">
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Simple
         <u-floater trigger="hover">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -126,7 +126,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Hide Delay
         <u-floater trigger="hover" hide-delay="100">
           <div class="p-3 bg-white rounded-lg border shadow">
@@ -135,7 +135,7 @@
         </u-floater>
       </u-btn>
 
-      <u-btn class="fill neutral">
+      <u-btn>
         Offset and Hide Delay
         <u-floater trigger="hover" hide-delay="100" offset="4">
           <div class="p-3 bg-white rounded-lg border shadow">

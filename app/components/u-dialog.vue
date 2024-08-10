@@ -37,7 +37,6 @@ const modelValue = defineModel({
 /* mounted */
 
 import { useMounted } from '@vueuse/core';
-
 const isMounted = useMounted();
 
 </script>
@@ -49,22 +48,12 @@ const isMounted = useMounted();
 
       <div
         v-if="modelValue"
-        class="
-          fixed top-0 left-0 h-full w-full
-          bg-black/15
-          flex items-center justify-center cursor-pointer
-          p-4
-        "
+        class="dialog-backdrop"
         :class="props.backdropClasses"
         @click="modelValue = false;">
 
         <div
-          class="
-            cursor-auto
-            max-w-full
-            max-h-full
-            overflow-auto
-          "
+          class="dialog-container"
           :class="props.containerClasses"
           @click.stop>
 
@@ -91,4 +80,11 @@ const isMounted = useMounted();
     opacity: 0;
   }
 
+</style>
+
+
+<style>
+  html:has(.dialog-backdrop) {
+    overflow: hidden;
+  }
 </style>
