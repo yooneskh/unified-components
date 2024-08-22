@@ -14,7 +14,7 @@
     "@iconify-json/mdi": "1.1.68",
     "@unocss/nuxt": "0.62.2",
     "@unocss/reset": "0.62.2",
-    "@vueuse/core": "11.0.0"
+    "@vueuse/core": "11.0.1"
   },
   "files": [
     "./app/**/*",
