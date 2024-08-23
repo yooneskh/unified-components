@@ -1,13 +1,13 @@
 {
   "name": "unified-components-playground",
-  "devDependencies": {
-    "nuxt": "3.12.4"
-  },
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "serve": "nuxt dev --port 8080",
     "postinstall": "nuxt prepare"
   },
-  "type": "module",
-  "version": "0.0.1"
+  "devDependencies": {
+    "nuxt": "3.13.0"
+  }
 }
