@@ -16,7 +16,7 @@ export default defineConfig({
     {
 
       'btn': `
-        px-[0.85em] py-[0.5em] rounded-lg
+        px-[0.85em] py-[0.5em]
         inline-flex gap-[6px] items-center shrink-0
         relative overflow-hidden
         interactive
@@ -32,18 +32,18 @@ export default defineConfig({
       `,
 
       'chip': `
-        px-[0.85em] py-[0.2em] rounded-full
-        inline-flex gap-[6px] items-center shrink-0
+        px-[0.85em] py-[0.2em]
+        inline-flex gap-[0.4em] items-center shrink-0
         relative overflow-hidden
       `,
       'chip-start-icon': `
-        ps-[0.4em]
+        ps-[0.2em]
       `,
       'chip-end-icon': `
-        pe-[0.4em]
+        pe-[0.2em]
       `,
       'chip-button': `
-        text-[0.85em] rounded-full !p-[0.2em]
+        text-[0.85em] !p-[0.2em]
       `,
 
       'tooltip-content': `
@@ -52,7 +52,7 @@ export default defineConfig({
 
       'dialog-backdrop': `
         fixed top-0 left-0 h-full w-full
-        bg-black/15
+        bg-neutral/15
         flex items-center justify-center cursor-pointer
         p-4
       `,
@@ -65,19 +65,16 @@ export default defineConfig({
 
       'card': `
         p-[0.75em]
-        rounded-lg
         border shadow
       `,
 
       'alert': `
         py-[0.5em] px-[1em]
-        rounded-lg
       `,
 
       'input-container': `
         border border-2
         focus-within:border-primary transition-border
-        rounded-lg
         block w-full
         flex items-center
       `,
@@ -93,7 +90,6 @@ export default defineConfig({
         border border-2 outline-none
         focus-within:border-primary transition-border
         bg-transparent
-        rounded-lg
         py-[0.4em] px-[0.7em]
         w-full
         block
@@ -102,9 +98,9 @@ export default defineConfig({
 
       'interactive': `
         relative overflow-hidden transition cursor-pointer
-        after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition
-        hover:after:bg-black/10
-        active:after:bg-black/20
+        after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition after:bg-[--u-on-color] after:opacity-0
+        hover:after:opacity-10
+        active:after:opacity-20
       `,
 
       'fill': `
@@ -116,11 +112,13 @@ export default defineConfig({
         bg-transparent
         border-1 border-[--u-color]
         text-[--u-color]
+        after:bg-[--u-color]
       `,
       'soft': `
         bg-[color-mix(in_srgb,var(--u-color)_15%,transparent)]
         text-[--u-color]
         border-1 border-transparent
+        after:bg-[--u-color]
       `,
       'ghost': `
         bg-[color-mix(in_srgb,var(--u-color)_0%,transparent)]

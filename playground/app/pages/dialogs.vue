@@ -23,7 +23,7 @@ const d4 = ref(false);
       />
 
       <u-dialog v-model="d1">
-        <div class="p-20 bg-white rounded-md text-center">
+        <div class="p-20 bg-white text-center">
           <p>
             Hello There!
           </p>
@@ -40,7 +40,7 @@ const d4 = ref(false);
       />
 
       <u-dialog v-model="d2">
-        <div class="p-20 bg-white rounded-md text-center">
+        <div class="p-20 bg-white text-center">
           <u-btn
             label="Open Next"
             @click="d3 = !d3;"
@@ -49,7 +49,7 @@ const d4 = ref(false);
       </u-dialog>
 
       <u-dialog v-model="d3">
-        <div class="p-20 bg-white rounded-md text-center">
+        <div class="p-20 bg-white text-center">
           <p>
             Nested dialog with a tooltip!
             <u-tooltip text="The Tooltip!" />
@@ -63,7 +63,7 @@ const d4 = ref(false);
       />
 
       <u-dialog backdrop-classes="pb-0" container-classes="self-end" v-model="d4">
-        <div class="p-20 bg-white rounded-t-2xl text-center">
+        <div class="p-20 bg-white text-center">
           This sticks to bottom!
         </div>
       </u-dialog>

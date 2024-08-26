@@ -1,6 +1,6 @@
 {
   "name": "unified-components",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "type": "module",
   "main": "./nuxt.config.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "dependencies": {
     "@floating-ui/vue": "1.1.4",
     "@iconify-json/mdi": "1.1.68",
-    "@unocss/nuxt": "0.62.2",
-    "@unocss/reset": "0.62.2",
-    "@vueuse/core": "11.0.1"
+    "@unocss/nuxt": "0.62.3",
+    "@unocss/reset": "0.62.3",
+    "@vueuse/core": "11.0.3"
   },
   "files": [
     "./app/**/*",

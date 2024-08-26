@@ -90,7 +90,7 @@
       <u-btn>
         Markup
         <u-tooltip>
-          This is a text with a <strong>Bold Section</strong> and an <i class="i-mdi-account" />
+          This is a text with a <strong>Bold Section</strong> and an <u-icon name="i-mdi-account" />
         </u-tooltip>
       </u-btn>
 
@@ -100,7 +100,7 @@
           <p>
             This is a text
           </p>
-          <img src="https://picsum.photos/200/100" class="block rounded-lg mt-1" />
+          <img src="https://picsum.photos/200/100" class="block mt-1" />
         </u-tooltip>
       </u-btn>
 

@@ -62,7 +62,10 @@ const emit = defineEmits([
 <template>
   <div>
 
-    <div v-if="props.title || props.subtitle || props.icon || props.appendIcon || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle) || !isSlotEmpty($slots.prepend) || !isSlotEmpty($slots.append) || (props.interchangeText && (props.text || !isSlotEmpty($slots.text)))" class="flex items-start gap-[1em]">
+    <div
+      v-if="props.title || props.subtitle || props.icon || props.appendIcon || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle) || !isSlotEmpty($slots.prepend) || !isSlotEmpty($slots.append) || (props.interchangeText && (props.text || !isSlotEmpty($slots.text)))"
+      class="flex items-start gap-[1em]"
+      :class="[!((props.title || !isSlotEmpty($slots.title)) && (props.subtitle || !isSlotEmpty($slots.subtitle))) ? 'items-center' : 'items-start']">
 
       <slot name="prepend">
         <u-icon
