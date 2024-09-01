@@ -1,7 +1,7 @@
 import { Text, Fragment, Comment } from 'vue';
 
 
-function isVnodeEmpty(node) {
+function isVnodeEmpty(node, visibilityCheck) {
 
   if (node.type === Comment) {
     return true;
@@ -15,30 +15,38 @@ function isVnodeEmpty(node) {
     return true;
   }
 
+  if (node.type?.__name === 'u-dropdown' && visibilityCheck) {
+    return true;
+  }
+
+  if (node.type?.__name === 'u-tooltip' && visibilityCheck) {
+    return true;
+  }
+
   return false;
 
 }
 
-export function areVnodesEmpty(nodes) {
+export function areVnodesEmpty(nodes, visibilityCheck) {
 
   if (!nodes) {
     return true;
   }
 
   if (Array.isArray(nodes)) {
-    return nodes.every(isVnodeEmpty);
+    return nodes.every(node => isVnodeEmpty(node, visibilityCheck));
   }
 
-  return isVnodeEmpty(nodes);
+  return isVnodeEmpty(nodes, visibilityCheck);
 
 }
 
-export function isSlotEmpty(slot) {
+export function isSlotEmpty(slot, visibilityCheck) {
 
   if (!slot || typeof slot !== 'function') {
     return true;
   }
 
-  return areVnodesEmpty(slot());
+  return areVnodesEmpty(slot(), visibilityCheck);
 
 }

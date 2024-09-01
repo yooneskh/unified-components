@@ -139,6 +139,22 @@ async function onClickHandlerError() {
       </u-btn>
 
       <u-btn
+        icon="i-mdi-account"
+        class="soft neutral">
+        <u-dropdown>
+          <u-card>
+            Hello
+          </u-card>
+        </u-dropdown>
+      </u-btn>
+
+      <u-btn
+        icon="i-mdi-account"
+        class="soft neutral">
+        <u-tooltip text="Tooltip" />
+      </u-btn>
+
+      <u-btn
         icon="i-mdi-plus"
         class="link neutral"
       />

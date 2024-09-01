@@ -41,6 +41,16 @@ const hasDefaultContent = computed(() => {
 
 });
 
+const isDefaultContentVisible = computed(() => {
+
+  if (props.label) {
+    return true;
+  }
+
+  return !isSlotEmpty(useSlots().default, true);
+
+});
+
 
 /* click handler */
 
@@ -73,7 +83,7 @@ async function handleClick() {
   <button
     class="btn fill neutral"
     :class="{
-      'btn-icon-only': props.icon && !hasDefaultContent,
+      'btn-icon-only': props.icon && !isDefaultContentVisible,
       'btn-loading': props.loading || innerLoading,
     }"
     :disabled="$attrs.disabled || props.loading || innerLoading"
@@ -92,7 +102,7 @@ async function handleClick() {
       :name="props.icon"
     />
 
-    <span v-if="hasDefaultContent" data-no-reference>
+    <span v-if="hasDefaultContent" :class="{ 'hidden': !isDefaultContentVisible }" data-no-reference>
       {{ props.label }}
       <slot />
     </span>
