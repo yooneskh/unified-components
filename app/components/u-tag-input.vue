@@ -99,7 +99,6 @@ function appendCurrentInput() {
     <u-label
       v-if="props.label"
       :text="props.label"
-      class="ms-1"
       :class="props.labelClasses"
     />
 

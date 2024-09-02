@@ -64,18 +64,18 @@ const emit = defineEmits([
 
     <div
       v-if="props.title || props.subtitle || props.icon || props.appendIcon || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle) || !isSlotEmpty($slots.prepend) || !isSlotEmpty($slots.append) || (props.interchangeText && (props.text || !isSlotEmpty($slots.text)))"
-      class="flex items-start gap-[1em]"
+      class="flex gap-[1em]"
       :class="[!((props.title || !isSlotEmpty($slots.title)) && (props.subtitle || !isSlotEmpty($slots.subtitle))) ? 'items-center' : 'items-start']">
 
       <slot name="prepend">
         <u-icon
           v-if="props.icon"
           :name="props.icon"
-          class="text-[1.5em]"
+          class="text-[1.3em]"
           :class="[
             props.iconClasses,
             {
-              'mt-[0.3em]': props.title || props.subtitle || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle),
+              'mt-[0.3em]': (props.title || !isSlotEmpty($slots.title)) && (props.subtitle || !isSlotEmpty($slots.subtitle)),
             },
           ]"
         />
@@ -83,7 +83,7 @@ const emit = defineEmits([
 
       <div class="grow">
         <slot name="title">
-          <div v-if="props.title" class="text-[1.5em]" :class="props.titleClasses">
+          <div v-if="props.title" class="text-[1.3em]" :class="props.titleClasses">
             {{ props.title }}
           </div>
         </slot>

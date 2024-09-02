@@ -58,7 +58,6 @@ const modelValue = defineModel({
     <u-label
       v-if="props.label"
       :text="props.label"
-      class="ms-1"
     />
 
     <div class="flex items-start gap-2">
