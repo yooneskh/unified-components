@@ -15,5 +15,8 @@ export default defineNuxtConfig({
     prefix: false,
     prefixSkip: false,
     upperAfterPrefix: false,
+    alias: [
+      ['try', 'radashTry'],
+    ],
   },
 });
