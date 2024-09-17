@@ -1,4 +1,4 @@
-import { defineNuxtModule, installModule, addPluginTemplate } from 'nuxt/kit';
+import { defineNuxtModule, installModule } from 'nuxt/kit';
 
 
 export default defineNuxtModule({
@@ -19,19 +19,9 @@ export default defineNuxtModule({
       }
     });
 
-    addPluginTemplate({
-      filename: 'virtual-unified-components-colors.js',
-      write: false,
-      getContents: () => {
-        return `
-          export default defineNuxtPlugin(nuxt => {
-            useHead({
-              style: ':root { ${Object.entries(options.theme).map(it => `--theme-${it[0]}: ${it[1]};`).join(' ')} } ${Object.keys(options.theme).filter(it => !it.startsWith('on')).map(it => `.${it} { --u-color: var(--theme-${it}); --u-on-color: var(--theme-on-${it}); }`).join(' ')}',
-            });
-          });
-        `;
-      },
-    });
+    if (options.theme) {
+      nuxt.options.runtimeConfig.public.unifiedComponentsTheme = options.theme;
+    }
 
   },
 });

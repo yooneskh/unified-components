@@ -1,6 +1,6 @@
 
 
-export function useParentElement() {
+export function usePassingParentElement() {
 
   const parentEl = ref();
 

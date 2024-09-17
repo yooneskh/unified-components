@@ -7,4 +7,13 @@ export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind-compat.css',
   ],
+  modules: [
+    '@vueuse/nuxt',
+    'nuxt-radash',
+  ],
+  radash: {
+    prefix: false,
+    prefixSkip: false,
+    upperAfterPrefix: false,
+  },
 });

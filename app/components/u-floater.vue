@@ -58,7 +58,7 @@ const modelValue = defineModel({
 import { autoUpdate, flip, offset, shift, useFloating } from '@floating-ui/vue';
 
 const refFloating = ref();
-const refParent = useParentElement();
+const refParent = usePassingParentElement();
 
 const refReference = computed(() =>
   props.refReference || refParent.value
