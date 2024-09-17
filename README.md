@@ -17,6 +17,8 @@ General capabilities added through UnoCSS
   - `background-color: theme('colors.blue.500');`
 - [Compile classes](https://unocss.dev/transformers/compile-class)
   - `<div class=":uno: text-center sm:text-left">...</div>`
+- Auto import access to all functions in the [VueUse](https://vueuse.org/)
+- Auto import access to all functions in the [Radash](https://radash-docs.vercel.app/)
 
 ## How to use
 
