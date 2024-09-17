@@ -10,9 +10,6 @@ useHead({
   title: 'Home',
 });
 
-
-/* template */
-
 </script>
 
 
