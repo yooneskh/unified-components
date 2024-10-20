@@ -55,22 +55,6 @@ export default defineNuxtConfig({
   extends: [
     'unified-components',
   ],
-  unifiedComponents: {
-    theme: {
-      'surface': '#FAFAFA',
-      'on-surface': '#212121',
-      'neutral': '#212121',
-      'on-neutral': '#FAFAFA',
-      'primary': '#3B82F6',
-      'on-primary': '#FAFAFA',
-      'secondary': '#2DD4BF',
-      'on-secondary': '#212121',
-      'success': '#22C55E',
-      'on-success': '#212121',
-      'danger': '#EF4444',
-      'on-danger': '#212121',
-    },
-  },
 });
 ```
 
@@ -83,4 +67,32 @@ export default defineNuxtConfig({
     background-color: theme('colors.surface');
   }
 </style>
+```
+
+## Theming
+
+The theme is automatically applied to all components. You can override the theme by passing a theme object to the module.
+
+`~/nuxt.config.js`
+
+```js
+export default defineNuxtConfig({
+  extends: [
+    'unified-components',
+  ],
+  unifiedComponents: {
+    theme: {
+      'surface': '#FAFAFA',
+      'on-surface': '#212121',
+      'neutral': '#212121',
+      'on-neutral': '#FAFAFA',
+      'primary': '#3B82F6',
+      'on-primary': '#FAFAFA',
+      'success': '#22C55E',
+      'on-success': '#212121',
+      'danger': '#EF4444',
+      'on-danger': '#212121',
+    },
+  },
+});
 ```
