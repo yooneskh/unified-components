@@ -64,11 +64,6 @@
       />
 
       <u-chip
-        label="Secondary"
-        class="outline secondary"
-      />
-
-      <u-chip
         label="Success"
         class="soft success"
       />

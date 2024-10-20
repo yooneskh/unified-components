@@ -81,11 +81,6 @@ async function onClickHandlerError() {
       />
 
       <u-btn
-        label="Secondary"
-        class="outline secondary"
-      />
-
-      <u-btn
         label="Success"
         class="soft success"
       />
@@ -301,7 +296,7 @@ async function onClickHandlerError() {
 
       <u-btn
         label="Disabled"
-        class="soft secondary"
+        class="soft primary"
         disabled
         :click-handler="() => console.log('clicked')"
       />
