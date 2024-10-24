@@ -19,9 +19,9 @@ export default defineNuxtModule({
       'primary': '#3B82F6',
       'on-primary': '#FAFAFA',
       'success': '#22C55E',
-      'on-success': '#212121',
+      'on-success': '#FAFAFA',
       'danger': '#EF4444',
-      'on-danger': '#212121',
+      'on-danger': '#FAFAFA',
     };
 
     installModule('@unocss/nuxt', {
