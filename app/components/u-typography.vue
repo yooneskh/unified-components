@@ -60,7 +60,7 @@ const emit = defineEmits([
 
 
 <template>
-  <div>
+  <div v-if="props.title || props.subtitle || props.icon || props.appendIcon || props.text || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle) || !isSlotEmpty($slots.prepend) || !isSlotEmpty($slots.append) || !isSlotEmpty($slots.default) || (props.interchangeText && (props.text || !isSlotEmpty($slots.text)))">
 
     <div
       v-if="props.title || props.subtitle || props.icon || props.appendIcon || !isSlotEmpty($slots.title) || !isSlotEmpty($slots.subtitle) || !isSlotEmpty($slots.prepend) || !isSlotEmpty($slots.append) || (props.interchangeText && (props.text || !isSlotEmpty($slots.text)))"
