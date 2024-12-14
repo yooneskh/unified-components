@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  extends: [
+    'nuxt-unified-confetti',
+  ],
   css: [
     '@unocss/reset/tailwind-compat.css',
   ],
@@ -12,11 +15,7 @@ export default defineNuxtConfig({
     'nuxt-radash',
   ],
   radash: {
-    prefix: false,
+    prefix: 'rad',
     prefixSkip: false,
-    upperAfterPrefix: false,
-    alias: [
-      ['try', 'radashTry'],
-    ],
   },
 });
