@@ -4,13 +4,13 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Icons"
+    />
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-icon
         name="i-mdi-check"

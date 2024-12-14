@@ -4,13 +4,13 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Placement
-    </div>
+    <u-typography
+      title="Dropdowns"
+    />
 
-    <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-2">
 
       <u-btn>
         Button
@@ -50,11 +50,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-6">
-      Trigger
-    </div>
-
-    <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-2">
 
       <u-btn>
         Click
@@ -76,11 +72,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-6">
-      Content
-    </div>
-
-    <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-2">
 
       <u-btn>
         Multiline Text
@@ -119,11 +111,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-6">
-      Persist
-    </div>
-
-    <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-2">
 
       <u-btn>
         No Persist

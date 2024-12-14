@@ -6,13 +6,13 @@ const modelValue = ref(['tag 1', 'tag 2']);
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Tag Inputs"
+    />
 
-    <div class="space-x-2 space-y-4 mt-3">
+    <div class="space-y-2 mt-2">
 
       <u-tag-input
         label="Simple Tag Input"
@@ -34,8 +34,6 @@ const modelValue = ref(['tag 1', 'tag 2']);
         disabled
         v-model="modelValue"
       />
-
-      <pre class="mt-4">{{ { modelValue } }}</pre>
 
     </div>
 

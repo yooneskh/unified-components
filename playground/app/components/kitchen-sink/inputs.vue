@@ -4,28 +4,30 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Inputs"
+    />
 
-    <div class="space-x-2 space-y-4 mt-3">
+    <div class="space-y-2 mt-2">
 
-      <u-textarea
+      <u-input
         label="Simple Input"
-        rows="4"
         placeholder="Enter value"
         icon="i-mdi-account"
+        inner-icon="i-mdi-home"
+        append-inner-icon="i-mdi-office-building"
         append-icon="i-mdi-check"
         message="hello"
       />
 
-      <u-textarea
+      <u-input
         label="Disabled Input"
-        rows="4"
         placeholder="Enter value"
         icon="i-mdi-account"
+        inner-icon="i-mdi-home"
+        append-inner-icon="i-mdi-office-building"
         append-icon="i-mdi-check"
         message="hello"
         disabled

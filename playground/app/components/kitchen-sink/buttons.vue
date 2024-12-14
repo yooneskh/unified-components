@@ -16,13 +16,13 @@ async function onClickHandlerError() {
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Variants
-    </div>
+    <u-typography
+      title="Buttons"
+    />
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-btn
         label="Default (Fill)"
@@ -60,11 +60,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Colors
-    </div>
-
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-btn
         label="Default (Neutral)"
@@ -97,11 +93,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Icons
-    </div>
-
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-btn
         label="Button"
@@ -156,11 +148,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Sizes
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-btn
         class="fill neutral text-sm">
@@ -179,11 +167,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Roundness
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-btn
         label="Button"
@@ -207,11 +191,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Loading
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-btn
         label="Button"
@@ -255,11 +235,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Click Handlers
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-btn
         label="Non Async"
@@ -281,11 +257,7 @@ async function onClickHandlerError() {
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Disabled
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-btn
         label="Disabled"

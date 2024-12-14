@@ -4,13 +4,13 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Variants
-    </div>
+    <u-typography
+      title="Chips"
+    />
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-chip
         label="Default (Fill)"
@@ -48,11 +48,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Colors
-    </div>
-
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-chip
         label="Default (Neutral)"
@@ -80,11 +76,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Icons
-    </div>
-
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-chip
         label="Chip"
@@ -107,11 +99,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Actions
-    </div>
-
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-chip
         label="Chip"
@@ -128,11 +116,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Sizes
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-chip
         label="Chip"
@@ -151,11 +135,7 @@
 
     </div>
 
-    <div class="text-xl font-bold mt-4">
-      Roundness
-    </div>
-
-    <div class="flex gap-2 mt-3 items-start">
+    <div class="flex gap-2 mt-2 items-start">
 
       <u-chip
         label="Chip"

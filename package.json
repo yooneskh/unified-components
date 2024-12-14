@@ -4,18 +4,19 @@
   "type": "module",
   "main": "./nuxt.config.js",
   "scripts": {
+    "serve": "nuxt dev ./playground --port 8080",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.13.2"
+    "nuxt": "3.14.1592"
   },
   "dependencies": {
     "@floating-ui/vue": "1.1.5",
     "@iconify-json/mdi": "1.2.1",
-    "@unocss/nuxt": "0.63.6",
-    "@unocss/reset": "0.63.6",
-    "@vueuse/core": "11.1.0",
-    "@vueuse/nuxt": "11.1.0",
+    "@unocss/nuxt": "0.65.1",
+    "@unocss/reset": "0.65.1",
+    "@vueuse/core": "12.0.0",
+    "@vueuse/nuxt": "12.0.0",
     "nuxt-radash": "1.0.0"
   },
   "files": [

@@ -4,13 +4,13 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Alerts"
+    />
 
-    <div class="space-y-8 mt-3">
+    <div class="space-y-2 mt-2">
 
       <u-alert
         text="This is a simple alert for you. (Default)"

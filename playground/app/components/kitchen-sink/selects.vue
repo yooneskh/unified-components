@@ -4,13 +4,13 @@
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Selects"
+    />
 
-    <div class="space-x-2 mt-3">
+    <div class="space-y-2 mt-2">
 
       <u-select
         label="Simple Input"

@@ -9,13 +9,13 @@ const d4 = ref(false);
 
 
 <template>
-  <div class="pa-4">
+  <div>
 
-    <div class="text-xl font-bold">
-      Modes
-    </div>
+    <u-typography
+      title="Dialogs"
+    />
 
-    <div class="space-x-2 mt-3">
+    <div class="space-x-2 mt-2">
 
       <u-btn
         label="Simple"
