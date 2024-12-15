@@ -1,6 +1,6 @@
 {
   "name": "unified-components",
-  "version": "0.6.19",
+  "version": "0.6.20",
   "type": "module",
   "main": "./nuxt.config.js",
   "scripts": {
