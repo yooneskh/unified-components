@@ -10,4 +10,7 @@ export default defineConfig({
     transformerDirectives(),
     transformerCompileClass(),
   ],
+  configDeps: [
+    '../uno.config.js',
+  ],
 });

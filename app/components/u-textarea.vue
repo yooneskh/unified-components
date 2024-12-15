@@ -18,6 +18,14 @@ const props = defineProps({
     default: undefined,
   },
 
+  labelClasses: {
+    type: String,
+    default: undefined,
+  },
+  containerClasses: {
+    type: String,
+    default: undefined,
+  },
   inputClasses: {
     type: String,
     default: undefined,
@@ -58,6 +66,8 @@ const modelValue = defineModel({
     <u-label
       v-if="props.label"
       :text="props.label"
+      class="mb-1"
+      :class="props.labelClasses"
     />
 
     <div class="flex items-start gap-2">
@@ -66,7 +76,7 @@ const modelValue = defineModel({
         <u-icon
           v-if="props.icon"
           :name="props.icon"
-          class="mt-3"
+          class="mt-2"
         />
       </slot>
 
@@ -84,13 +94,13 @@ const modelValue = defineModel({
         <u-icon
           v-if="props.appendIcon"
           :name="props.appendIcon"
-          class="mt-3"
+          class="mt-2"
         />
       </slot>
 
     </div>
 
-    <p v-if="props.message" class="text-sm mt-1 ms-1">
+    <p v-if="props.message" class="text-sm mt-1">
       {{ props.message }}
     </p>
 

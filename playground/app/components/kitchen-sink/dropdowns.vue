@@ -13,7 +13,7 @@
     <div class="flex gap-2 mt-2">
 
       <u-btn>
-        Button
+        Default
         <u-dropdown>
           <div class="bg-white text-dark p-2 border shadow">
             Hello
@@ -22,7 +22,7 @@
       </u-btn>
 
       <u-btn>
-        Button
+        Top
         <u-dropdown placement="top">
           <div class="bg-white text-dark p-2 border shadow">
             Hello
@@ -31,7 +31,7 @@
       </u-btn>
 
       <u-btn>
-        Button
+        Left
         <u-dropdown placement="left">
           <div class="bg-white text-dark p-2 border shadow">
             Hello
@@ -40,7 +40,7 @@
       </u-btn>
 
       <u-btn>
-        Button
+        Right
         <u-dropdown placement="right">
           <div class="bg-white text-dark p-2 border shadow">
             Hello

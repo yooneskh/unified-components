@@ -26,6 +26,10 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
+  chipClasses: {
+    type: String,
+    default: undefined,
+  },
   inputClasses: {
     type: String,
     default: undefined,
@@ -99,6 +103,7 @@ function appendCurrentInput() {
     <u-label
       v-if="props.label"
       :text="props.label"
+      class="mb-1"
       :class="props.labelClasses"
     />
 
@@ -129,7 +134,8 @@ function appendCurrentInput() {
             <u-chip
               v-for="(value, index) of modelValue || []"
               :label="value"
-              class="soft neutral text-[0.8em]"
+              class="soft neutral text-xs"
+              button-classes="!p-[0.25em] !text-[0.8em] rounded-full"
               :append-action-icon="!('disabled' in $attrs) ? 'i-mdi-close' : undefined"
               @click:append-action="deleteValueAtIndex(index);"
             />
@@ -170,7 +176,7 @@ function appendCurrentInput() {
 
     </div>
 
-    <p v-if="props.message" class="mt-1 ms-1">
+    <p v-if="props.message" class="text-sm mt-1">
       {{ props.message }}
     </p>
 

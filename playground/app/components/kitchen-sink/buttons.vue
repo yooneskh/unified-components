@@ -202,7 +202,7 @@ async function onClickHandlerError() {
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill neutral"
+        class="fill primary"
         loading
       />
       

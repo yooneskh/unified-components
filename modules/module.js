@@ -11,18 +11,27 @@ export default defineNuxtModule({
   },
   setup: (options, nuxt) => {
     
-    const themeObj = options.theme || {
-      'surface': '#FAFAFA',
-      'on-surface': '#212121',
+    const themeObj = Object.assign(options.theme || {}, {
+
+      /* contextual */
+
       'neutral': '#212121',
       'on-neutral': '#FAFAFA',
-      'primary': '#3B82F6',
+      'primary': '#409EFF',
       'on-primary': '#FAFAFA',
-      'success': '#22C55E',
+      'success': '#67C23A',
       'on-success': '#FAFAFA',
-      'danger': '#EF4444',
+      'warning': '#E6A23C',
+      'on-warning': '#FAFAFA',
+      'danger': '#F56C6C',
       'on-danger': '#FAFAFA',
-    };
+
+      /* utility */
+
+      'surface': '#FAFAFA',
+      'on-surface': '#212121',
+
+    });
 
     installModule('@unocss/nuxt', {
       extendTheme: (theme) => {

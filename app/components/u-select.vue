@@ -74,6 +74,7 @@ const modelValue = defineModel({
     <u-label
       v-if="props.label"
       :text="props.label"
+      class="mb-1"
       :class="props.labelClasses"
     />
 
@@ -137,7 +138,7 @@ const modelValue = defineModel({
 
     </div>
 
-    <p v-if="props.message" class="mt-1 ms-1">
+    <p v-if="props.message" class="text-sm mt-1">
       {{ props.message }}
     </p>
 

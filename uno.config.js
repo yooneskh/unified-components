@@ -15,10 +15,16 @@ export default defineConfig({
   shortcuts: [
     {
 
+      'alert': `
+        py-[0.5em] px-[1em]
+        rounded
+      `,
+
       'btn': `
-        px-[0.85em] py-[0.5em]
-        inline-flex gap-[6px] items-center shrink-0
-        relative overflow-hidden
+        px-[1em] py-[0.5em]
+        rounded
+        inline-flex gap-[0.5em] items-center shrink-0
+        relative overflow-clip
         interactive
         disabled:opacity-50 disabled:cursor-not-allowed
       `,
@@ -28,31 +34,34 @@ export default defineConfig({
       'btn-loader': `
         absolute inset-0
         flex items-center justify-center
-        bg-white/50
+        bg-on-neutral/50
+      `,
+
+      'card': `
+        p-[0.75em]
+        rounded
+        shadow border-black/10
       `,
 
       'chip': `
-        px-[0.85em] py-[0.2em]
-        inline-flex gap-[0.4em] items-center shrink-0
-        relative overflow-hidden
+        px-[0.75em] py-[0.25em]
+        rounded
+        inline-flex gap-[0.5em] items-center shrink-0
+        relative overflow-clip
       `,
       'chip-start-icon': `
-        ps-[0.2em]
+        ps-[0.25em]
       `,
       'chip-end-icon': `
-        pe-[0.2em]
+        pe-[0.25em]
       `,
       'chip-button': `
-        text-[0.85em] !p-[0.2em]
-      `,
-
-      'tooltip-content': `
-        px-2 py-1
+        text-3 !p-[0.25em]
       `,
 
       'dialog-backdrop': `
-        fixed top-0 left-0 h-full w-full
-        bg-neutral/15
+        fixed top-0 left-0 h-screen w-screen
+        bg-on-surface/25
         flex items-center justify-center cursor-pointer
         p-4
       `,
@@ -63,41 +72,38 @@ export default defineConfig({
         overflow-auto
       `,
 
-      'card': `
-        p-[0.75em]
-        border shadow
-      `,
-
-      'alert': `
-        py-[0.5em] px-[1em]
+      'tooltip-content': `
+        px-[0.5em] py-[0.25em]
       `,
 
       'input-container': `
-        border border-2
-        focus-within:border-primary transition-border
+        border border-black/15
+        rounded
+        focus-within:(border-primary ring-1 ring-primary) transition-border
         block w-full
         flex items-center
       `,
       'input-element': `
         border-none rounded-none outline-none
         bg-transparent
-        py-[0.4em] px-[0.7em]
+        py-[0.25em] px-[0.5em]
         w-full
         block
         disabled:opacity-50 disabled:cursor-not-allowed
       `,
       'input-textarea': `
-        border border-2 outline-none
-        focus-within:border-primary transition-border
+        border border-black/15 outline-none
+        rounded
+        focus-within:(border-primary ring-1 ring-primary) transition-border
         bg-transparent
-        py-[0.4em] px-[0.7em]
+        py-[0.25em] px-[0.5em]
         w-full
         block
         disabled:opacity-50 disabled:cursor-not-allowed
       `,
 
       'interactive': `
-        relative overflow-hidden transition cursor-pointer
+        relative overflow-clip transition cursor-pointer
         after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition after:bg-[--u-on-color] after:opacity-0
         hover:after:opacity-10
         active:after:opacity-20

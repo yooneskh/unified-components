@@ -56,7 +56,7 @@ const modelValue = defineModel({
 
         <input
           type="radio"
-          class="w-[0.9em] h-[0.9em]"
+          class="w-4 h-4"
           :class="props.radioClasses"
           :value="item.value || item"
           v-model="modelValue"

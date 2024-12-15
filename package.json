@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./nuxt.config.js",
   "scripts": {
-    "serve": "nuxt dev ./playground --port 8080",
+    "serve": "cd ./playground && nuxt dev --port 8080 && cd ..",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {

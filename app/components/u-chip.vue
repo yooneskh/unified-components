@@ -22,6 +22,10 @@ const props = defineProps({
     type: String,
   },
 
+  buttonClasses: {
+    type: String,
+  },
+
 });
 
 const emit = defineEmits([
@@ -45,6 +49,7 @@ const emit = defineEmits([
       variant="ghost"
       :icon="props.actionIcon"
       class="chip-button"
+      :class="props.buttonClasses"
       @click="emit('click:action')"
     />
 
@@ -66,6 +71,7 @@ const emit = defineEmits([
       variant="ghost"
       :icon="props.appendActionIcon"
       class="chip-button"
+      :class="props.buttonClasses"
       @click="emit('click:append-action')"
     />
 
