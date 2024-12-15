@@ -46,9 +46,8 @@ const emit = defineEmits([
 
     <u-btn
       v-if="props.actionIcon"
-      variant="ghost"
       :icon="props.actionIcon"
-      class="chip-button"
+      class="soft chip-button"
       :class="props.buttonClasses"
       @click="emit('click:action')"
     />
@@ -68,9 +67,8 @@ const emit = defineEmits([
 
     <u-btn
       v-if="props.appendActionIcon"
-      variant="ghost"
       :icon="props.appendActionIcon"
-      class="chip-button"
+      class="soft chip-button"
       :class="props.buttonClasses"
       @click="emit('click:append-action')"
     />
