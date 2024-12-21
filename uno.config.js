@@ -40,7 +40,6 @@ export default defineConfig({
       'card': `
         p-[0.75em]
         rounded
-        shadow border-black/10
       `,
 
       'chip': `
@@ -50,13 +49,13 @@ export default defineConfig({
         relative overflow-clip
       `,
       'chip-start-icon': `
-        ps-[0.25em]
+        ps-[0.5em]
       `,
       'chip-end-icon': `
-        pe-[0.25em]
+        pe-[0.5em]
       `,
       'chip-button': `
-        text-3 !p-[0.25em]
+        text-[0.75em] !p-[0.25em]
       `,
 
       'dialog-backdrop': `
@@ -112,18 +111,24 @@ export default defineConfig({
       'fill': `
         bg-[--u-color]
         text-[--u-on-color]
-        border-1 border-[--u-color]
+        border border-[--u-color]
+      `,
+      'raise': `
+        bg-[--u-color]
+        text-[--u-on-color]
+        border border-[rgb(from_var(--u-on-color)_r_g_b_/_15%)]
+        shadow
       `,
       'outline': `
         bg-transparent
-        border-1 border-[--u-color]
+        border border-[--u-color]
         text-[--u-color]
         after:bg-[--u-color]
       `,
       'soft': `
         bg-[color-mix(in_srgb,var(--u-color)_15%,transparent)]
         text-[--u-color]
-        border-1 border-transparent
+        border border-transparent
         after:bg-[--u-color]
       `,
       'ghost': `
@@ -133,20 +138,20 @@ export default defineConfig({
         hover:bg-[color-mix(in_srgb,var(--u-color)_20%,transparent)]
         active:bg-[color-mix(in_srgb,var(--u-color)_30%,transparent)]
         after:hidden
-        border-1 border-transparent
+        border border-transparent
       `,
       'link': `
         bg-transparent
         text-[--u-color]
         hover:underline
         after:hidden
-        border-1 border-transparent
+        border border-transparent
       `,
       'text': `
         bg-transparent
         text-[--u-color]
         after:hidden
-        border-1 border-transparent
+        border border-transparent
       `,
 
     },

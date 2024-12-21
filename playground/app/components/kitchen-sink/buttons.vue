@@ -16,13 +16,13 @@ async function onClickHandlerError() {
 
 
 <template>
-  <div>
+  <div class="space-y-2">
 
     <u-typography
       title="Buttons"
     />
 
-    <div class="space-x-2 mt-2">
+    <div class="space-x-2">
 
       <u-btn
         label="Default (Fill)"
@@ -30,37 +30,37 @@ async function onClickHandlerError() {
 
       <u-btn
         label="Fill"
-        class="fill neutral"
+        class="fill"
       />
 
       <u-btn
         label="Outline"
-        class="outline neutral"
+        class="outline"
       />
 
       <u-btn
         label="Soft"
-        class="soft neutral"
+        class="soft"
       />
 
       <u-btn
         label="Ghost"
-        class="ghost neutral"
+        class="ghost"
       />
 
       <u-btn
         label="Link"
-        class="link neutral"
+        class="link"
       />
 
       <u-btn
         label="Text"
-        class="text neutral"
+        class="text"
       />
 
     </div>
 
-    <div class="space-x-2 mt-2">
+    <div class="space-x-2">
 
       <u-btn
         label="Default (Neutral)"
@@ -68,12 +68,12 @@ async function onClickHandlerError() {
 
       <u-btn
         label="Neutral"
-        class="fill neutral"
+        class="neutral"
       />
 
       <u-btn
         label="Primary"
-        class="fill primary"
+        class="primary"
       />
 
       <u-btn
@@ -82,52 +82,51 @@ async function onClickHandlerError() {
       />
 
       <u-btn
-        label="Error"
+        label="Danger"
         class="ghost danger"
       />
 
       <u-btn
-        label="Error"
-        class="link danger"
+        label="Warning"
+        class="link warning"
       />
 
     </div>
 
-    <div class="space-x-2 mt-2">
+    <div class="flex gap-2 items-start">
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill neutral"
       />
 
       <u-btn
         label="Button"
         append-icon="i-mdi-account"
-        class="outline neutral"
+        class="outline"
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
         append-icon="i-mdi-plus"
-        class="soft neutral"
+        class="soft"
       />
 
       <u-btn
         icon="i-mdi-account"
-        class="ghost neutral"
+        class="ghost"
       />
 
       <u-btn
         icon="i-mdi-account"
-        class="soft neutral">
+        class="soft">
         <!-- empty default content to check for bug -->
       </u-btn>
 
       <u-btn
         icon="i-mdi-account"
-        class="soft neutral">
+        class="soft">
         <u-dropdown>
           <u-card>
             Hello
@@ -137,131 +136,124 @@ async function onClickHandlerError() {
 
       <u-btn
         icon="i-mdi-account"
-        class="soft neutral">
+        class="soft">
         <u-tooltip text="Tooltip" />
       </u-btn>
 
       <u-btn
         icon="i-mdi-plus"
-        class="link neutral"
+        class="link"
       />
 
     </div>
 
-    <div class="flex gap-2 mt-2 items-start">
-
-      <u-btn
-        class="fill neutral text-sm">
-        Button
-      </u-btn>
+    <div class="flex gap-2 items-start">
 
       <u-btn
         label="Button"
-        class="fill neutral"
+        class="text-sm"
       />
 
       <u-btn
         label="Button"
-        class="fill neutral text-xl"
-      />
-
-    </div>
-
-    <div class="flex gap-2 mt-2 items-start">
-
-      <u-btn
-        label="Button"
-        class="fill neutral rounded-none"
       />
 
       <u-btn
         label="Button"
-        class="fill neutral rounded"
-      />
-
-      <u-btn
-        label="Button"
-        class="fill neutral rounded-xl"
-      />
-
-      <u-btn
-        label="Button"
-        class="fill neutral rounded-full"
+        class="text-xl"
       />
 
     </div>
 
-    <div class="flex gap-2 mt-2 items-start">
+    <div class="flex gap-2 items-start">
 
       <u-btn
         label="Button"
-        class="fill neutral"
+        class="rounded-none"
+      />
+
+      <u-btn
+        label="Button"
+        class="rounded"
+      />
+
+      <u-btn
+        label="Button"
+        class="rounded-xl"
+      />
+
+      <u-btn
+        label="Button"
+        class="rounded-full"
+      />
+
+    </div>
+
+    <div class="flex gap-2 items-start">
+
+      <u-btn
+        label="Button"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="fill primary"
+        class="primary"
         loading
       />
       
       <u-btn
         icon="i-mdi-account"
-        class="fill neutral"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="outline neutral"
+        class="outline"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="ghost neutral"
+        class="ghost"
         loading
       />
 
       <u-btn
         label="Button"
         icon="i-mdi-account"
-        class="text neutral"
+        class="text"
         loading
       />
 
     </div>
 
-    <div class="flex gap-2 mt-2 items-start">
+    <div class="flex gap-2 items-start">
 
       <u-btn
         label="Non Async"
-        class="fill neutral"
         :click-handler="() => console.log('was clicked')"
       />
 
       <u-btn
         label="Async (2 Sec)"
-        class="fill neutral"
         :click-handler="onClickHandler"
       />
 
       <u-btn
         label="Async Error (2 Sec)"
-        class="fill neutral"
         :click-handler="onClickHandlerError"
       />
 
     </div>
 
-    <div class="flex gap-2 mt-2 items-start">
+    <div class="flex gap-2 items-start">
 
       <u-btn
         label="Disabled"
-        class="fill neutral"
         disabled
         @click="console.log('clicked');"
       />

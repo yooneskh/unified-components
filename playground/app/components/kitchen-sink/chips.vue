@@ -4,54 +4,55 @@
 
 
 <template>
-  <div>
+  <div class="space-y-2">
 
     <u-typography
       title="Chips"
     />
 
-    <div class="space-x-2 mt-2">
+    <div class="space-x-2">
 
       <u-chip
-        label="Default (Fill)"
+        label="Default (Soft)"
       />
 
       <u-chip
         label="Fill"
-        class="fill neutral"
+        class="fill"
       />
 
       <u-chip
         label="Outline"
-        class="outline neutral"
+        class="outline"
       />
 
       <u-chip
         label="Soft"
-        class="soft neutral"
+        class="soft"
       />
 
       <u-chip
         label="Ghost"
-        class="ghost neutral"
+        class="ghost"
       />
 
       <u-chip
         label="Link"
-        class="link neutral"
+        class="link"
       />
 
       <u-chip
         label="Text"
-        class="text neutral"
+        class="text"
       />
 
     </div>
 
-    <div class="space-x-2 mt-2">
+    <div class="space-x-2">
 
       <u-chip
         label="Default (Neutral)"
+        class="fill"
       />
 
       <u-chip
@@ -76,12 +77,11 @@
 
     </div>
 
-    <div class="space-x-2 mt-2">
+    <div class="flex items-start gap-2">
 
       <u-chip
         label="Chip"
         icon="i-mdi-account"
-        class="fill neutral"
       />
 
       <u-chip
@@ -94,12 +94,12 @@
         label="Chip"
         icon="i-mdi-account"
         append-icon="i-mdi-plus"
-        class="soft neutral"
+        class="fill neutral"
       />
 
     </div>
 
-    <div class="space-x-2 mt-2">
+    <div class="flex items-start gap-2">
 
       <u-chip
         label="Chip"

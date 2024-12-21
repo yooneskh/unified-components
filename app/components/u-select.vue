@@ -4,6 +4,10 @@
 
 const props = defineProps({
 
+  class: {
+    type: String,
+  },
+
   items: {
     type: Array,
     default: undefined,
@@ -55,21 +59,13 @@ const props = defineProps({
 
 });
 
-const emit = defineEmits([
-
-]);
-
-
-const modelValue = defineModel({
-
-});
-
+const modelValue = defineModel();
 
 </script>
 
 
 <template>
-  <div>
+  <div :class="props.class">
 
     <u-label
       v-if="props.label"

@@ -1,5 +1,8 @@
 <script setup>
 
+import { isSlotEmpty } from '../libs/is-vnode-empty.js';
+
+
 /* interface */
 
 const props = defineProps({

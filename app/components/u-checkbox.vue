@@ -29,7 +29,7 @@ const modelValue = defineModel({
 
     <input
       type="checkbox"
-      class="w-[0.9em] h-[0.9em]"
+      class="w-[1em] h-[1em]"
       v-model="modelValue"
     />
 

@@ -15,11 +15,11 @@ function isVnodeEmpty(node, visibilityCheck) {
     return true;
   }
 
-  if (node.type?.__name === 'u-dropdown' && visibilityCheck) {
+  if (['u-dropdown', 'UDropdown'].includes(node.type?.__name) && visibilityCheck) {
     return true;
   }
 
-  if (node.type?.__name === 'u-tooltip' && visibilityCheck) {
+  if (['u-tooltip', 'UTooltip'].includes(node.type?.__name) && visibilityCheck) {
     return true;
   }
 

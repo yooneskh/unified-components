@@ -37,7 +37,7 @@
         icon="i-mdi-account">
 
         <template #append>
-          <u-btn class="fill neutral">
+          <u-btn>
             Action
           </u-btn>
         </template>

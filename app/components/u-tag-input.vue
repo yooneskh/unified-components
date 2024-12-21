@@ -4,6 +4,10 @@
 
 const props = defineProps({
 
+  class: {
+    type: String,
+  },
+
   type: {
     type: String,
     default: 'text',
@@ -59,11 +63,6 @@ const props = defineProps({
 
 });
 
-const emit = defineEmits([
-
-]);
-
-
 const modelValue = defineModel({
   type: Array,
 });
@@ -98,7 +97,7 @@ function appendCurrentInput() {
 
 
 <template>
-  <div>
+  <div :class="props.class">
 
     <u-label
       v-if="props.label"

@@ -1,8 +1,15 @@
 <script setup>
 
+import { smartClassMerge } from '../libs/uc-smart-class-merge.ts';
+
+
 /* interface */
 
 const props = defineProps({
+
+  class: {
+    type: String,
+  },
 
   title: {
     type: String,
@@ -47,17 +54,18 @@ const props = defineProps({
 
 });
 
-const emit = defineEmits([
 
-]);
+/* typography */
+
+const typographyProps = reactiveOmit(props, 'class');
 
 </script>
 
 
 <template>
-  <div class="card fill">
+  <div :class="smartClassMerge('card raise surface', props.class)">
 
-    <u-typography v-bind="props">
+    <u-typography v-bind="typographyProps">
       <template v-if="$slots.title" #title><slot name="title" /></template>
       <template v-if="$slots.subtitle" #subtitle><slot name="subtitle" /></template>
       <template v-if="$slots.text" #text><slot name="text" /></template>

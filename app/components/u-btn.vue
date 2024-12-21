@@ -1,8 +1,16 @@
 <script setup>
 
+import { isSlotEmpty } from '../libs/is-vnode-empty.js';
+import { smartClassMerge } from '../libs/uc-smart-class-merge.ts';
+
+
 /* interface */
 
 const props = defineProps({
+
+  class: {
+    type: String,
+  },
 
   label: {
     type: String,
@@ -77,12 +85,14 @@ async function handleClick() {
 
 <template>
   <button
-    class="btn fill neutral"
-    :class="{
-      'btn-icon-only': props.icon && !isDefaultContentVisible,
-      'btn-loading': props.loading || innerLoading,
-    }"
-    :disabled="$attrs.disabled || props.loading || innerLoading"
+    :class="[
+      smartClassMerge('btn fill neutral', props.class),
+      {
+        'btn-icon-only': props.icon && !isDefaultContentVisible,
+        'btn-loading': props.loading || innerLoading,
+      }
+    ]"
+    :disabled="$attrs.disabled"
     @click="handleClick()">
 
     <span

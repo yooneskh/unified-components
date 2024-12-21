@@ -24,11 +24,6 @@ const props = defineProps({
 
 });
 
-const emit = defineEmits([
-
-]);
-
-
 const modelValue = defineModel({
   type: Boolean,
 });

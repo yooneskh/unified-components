@@ -1,8 +1,15 @@
 <script setup>
 
+import { smartClassMerge } from '../libs/uc-smart-class-merge.ts';
+
+
 /* interface */
 
 const props = defineProps({
+
+  class: {
+    type: String,
+  },
 
   label: {
     type: String,
@@ -38,11 +45,13 @@ const emit = defineEmits([
 
 <template>
   <span
-    class="chip fill neutral"
-    :class="{
-      'chip-start-icon': props.actionIcon || props.icon,
-      'chip-end-icon': props.appendActionIcon || props.appendIcon,
-    }">
+    :class="[
+      smartClassMerge('chip soft neutral', props.class),
+      {
+        'chip-start-icon': props.actionIcon || props.icon,
+        'chip-end-icon': props.appendActionIcon || props.appendIcon,
+      }
+    ]">
 
     <u-btn
       v-if="props.actionIcon"

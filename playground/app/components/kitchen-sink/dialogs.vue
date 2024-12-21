@@ -9,13 +9,13 @@ const d4 = ref(false);
 
 
 <template>
-  <div>
+  <div class="space-y-2">
 
     <u-typography
       title="Dialogs"
     />
 
-    <div class="space-x-2 mt-2">
+    <div class="space-x-2">
 
       <u-btn
         label="Simple"
@@ -23,7 +23,7 @@ const d4 = ref(false);
       />
 
       <u-dialog v-model="d1">
-        <div class="p-20 bg-white text-center">
+        <u-card class="min-h-xs min-w-md flex flex-col items-center justify-center">
           <p>
             Hello There!
           </p>
@@ -31,7 +31,7 @@ const d4 = ref(false);
             A Button With Tooltip!
             <u-tooltip text="Hello!" />
           </u-btn>
-        </div>
+        </u-card>
       </u-dialog>
 
       <u-btn
@@ -40,21 +40,21 @@ const d4 = ref(false);
       />
 
       <u-dialog v-model="d2">
-        <div class="p-20 bg-white text-center">
+        <u-card class="min-h-xs min-w-md flex flex-col items-center justify-center">
           <u-btn
             label="Open Next"
             @click="d3 = !d3;"
           />
-        </div>
+        </u-card>
       </u-dialog>
 
       <u-dialog v-model="d3">
-        <div class="p-20 bg-white text-center">
+        <u-card class="min-h-xs min-w-md flex flex-col items-center justify-center">
           <p>
             Nested dialog with a tooltip!
             <u-tooltip text="The Tooltip!" />
           </p>
-        </div>
+        </u-card>
       </u-dialog>
 
       <u-btn
@@ -63,9 +63,9 @@ const d4 = ref(false);
       />
 
       <u-dialog backdrop-classes="pb-0" container-classes="self-end" v-model="d4">
-        <div class="p-20 bg-white text-center">
+        <u-card class="min-h-xs min-w-md flex flex-col items-center justify-center rounded-b-none">
           This sticks to bottom!
-        </div>
+        </u-card>
       </u-dialog>
 
     </div>
