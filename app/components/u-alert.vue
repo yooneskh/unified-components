@@ -1,6 +1,6 @@
 <script setup>
 
-import { smartClassMerge } from '../libs/uc-smart-class-merge.ts';
+import { smartClassMerge } from '../libs/smart-class-merge.ts';
 
 
 /* interface */
