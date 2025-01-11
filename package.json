@@ -8,15 +8,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.15.0"
+    "nuxt": "3.15.1"
   },
   "dependencies": {
-    "@floating-ui/vue": "1.1.5",
+    "@floating-ui/vue": "1.1.6",
     "@iconify-json/mdi": "1.2.2",
-    "@unocss/nuxt": "0.65.3",
-    "@unocss/reset": "0.65.3",
-    "@vueuse/core": "12.3.0",
-    "@vueuse/nuxt": "12.3.0",
+    "@unocss/nuxt": "65.4.0",
+    "@unocss/reset": "65.4.0",
+    "@vueuse/core": "12.4.0",
+    "@vueuse/nuxt": "12.4.0",
     "nuxt-radash": "1.0.0",
     "nuxt-unified-confetti": "0.1.1",
     "pluralize": "8.0.0"
